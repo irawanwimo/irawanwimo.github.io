@@ -940,3 +940,11 @@ nav.paginate-pagination > ul > li >a.active{
   background: #00000073;
   color: #f78f1f;
 }
+
+.gallery_shabu{
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
