@@ -756,6 +756,7 @@ body {
 
 .prev-arrow,
 .next-arrow {
+  background: #79797961;
   cursor: pointer !important;
   display: block !important;
   z-index: 150;
@@ -765,7 +766,6 @@ body {
   color: #f78f1e;
   font-size: 3rem;
   line-height: 3rem;
-  background: transparent;
   border-radius: 1rem;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
@@ -836,9 +836,13 @@ nav.paginate-pagination > ul > li{
   padding: 0px 5px;
 }
 nav.paginate-pagination > ul > li >a{
+  border-radius: 5px;
   border: solid 1px #eaeaea;
   padding: 5px 10px;
   color: #999;
+}
+nav.paginate-pagination > ul > li >a:hover{
+  color: #f78f1e;
 }
 nav.paginate-pagination > ul > li >a.active{
   color: #f78f1e;
@@ -947,4 +951,43 @@ nav.paginate-pagination > ul > li >a.active{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.shabu_map{
+  max-height: 400px;
+  height: 400px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.shabu_contact{
+  max-height: 400px;
+  height: 400px;
+  background: #2f2f2f;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.shabu_contact_ins{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shabu_contact_r{
+  max-height: 400px;
+  height: 400px;
+  background: #fff;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  color: #000;
+  padding: 30px !important;
+}
+.shabu_contact_r_f{
+  color: #000;
+  text-align: left;
 }
