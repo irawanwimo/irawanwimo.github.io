@@ -759,7 +759,7 @@ body {
 
 .prev-arrow,
 .next-arrow {
-  background: #79797961;
+  background: #111;
   cursor: pointer !important;
   display: block !important;
   z-index: 150;
