@@ -13,6 +13,9 @@ body {
   background: #333;
 }
 
+.hidden{
+  opacity: 0 !important;
+}
 /*----------------------------*\
       Coverflow Album Slider
 \*-----------------------------*/
@@ -764,9 +767,9 @@ body {
   top: 50%;
   padding: 1.5rem 2rem;
   color: #f78f1e;
-  font-size: 3rem;
-  line-height: 3rem;
-  border-radius: 1rem;
+  font-size: 12px;
+  line-height: 1rem;
+  border-radius: 5px;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   -webkit-transform: translateY(-50%);

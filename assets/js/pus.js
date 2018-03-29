@@ -134,6 +134,7 @@ setupCoverflow();
 
 $(".t_dc").click(function() {
   var c_s = $('.t_attr').attr('data-coverflow-position');
+  console.log(c_s+" -----");
 
   if(c_s == '1'){
 
@@ -148,6 +149,10 @@ $(".t_dc").click(function() {
         $(this).css('background-image', 'url(' + img + ')');
     }).fadeTo('slow', 1);
 
+    $('#prev').text('');
+    $('#next').text('Shabu2House ');
+    $('#prev').addClass('hidden');
+
   }else if(c_s == '2'){
     $('.st_t_1').hide();
     $('.st_t_3').hide();
@@ -158,6 +163,12 @@ $(".t_dc").click(function() {
     $('#bg_store').fadeTo('fast', 0.1, function(){
         $(this).css('background-image', 'url(' + img + ')');
     }).fadeTo('slow', 1);
+
+    $('#prev').text(' Kobeshi');
+    $('#next').text('Kobeshi Kitchen ');
+
+    $('#next').removeClass('hidden');
+    $('#prev').removeClass('hidden');
   }else if(c_s == '3'){
     $('.st_t_2').hide();
     $('.st_t_1').hide();
@@ -168,7 +179,12 @@ $(".t_dc").click(function() {
     $('#bg_store').fadeTo('fast', 0.1, function(){
         $(this).css('background-image', 'url(' + img + ')');
     }).fadeTo('slow', 1);
+
+    $('#prev').text(' Shabu2House');
+    $('#next').text('');
+
+    $('#next').addClass('hidden');
   }
 
-  // console.log(c_s);
+
 });
