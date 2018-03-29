@@ -134,7 +134,7 @@ setupCoverflow();
 
 $(".t_dc").click(function() {
   var c_s = $('.t_attr').attr('data-coverflow-position');
-  console.log(c_s+" -----");
+  // console.log(c_s+" -----");
 
   if(c_s == '1'){
 
