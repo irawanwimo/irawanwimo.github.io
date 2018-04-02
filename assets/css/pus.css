@@ -994,3 +994,12 @@ nav.paginate-pagination > ul > li >a.active{
   color: #000;
   text-align: left;
 }
+
+.shabu_promo_a{
+  height: 390px;
+  border: solid 1px black;
+  background: #111;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}

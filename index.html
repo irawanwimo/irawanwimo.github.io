@@ -138,12 +138,12 @@
         </div>
       </section> -->
 
-        <section class="module bg-dark-90" data-background="assets/image/cover2.jpg" id="bg_store">
+        <section class="module bg-dark-60 parallax-bg" data-background="assets/image/cover2.jpg" id="bg_store">
           <div class="container">
             <div class="row">
               <div class="col-sm-12">
                 <div class="font-alt mb-30 titan-title-size-1 text-center">
-                  <font class="landing_pt">PT Shabu Shabu House</font>
+                  <font class="landing_pt">Shabu Shabu House Group</font>
                 </div>
                 <h1 class="pus_st_title font-alt st_t_1" style="display:none;">
                   Kobeshi
@@ -240,6 +240,25 @@
       </div>
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
     </main>
+    <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      Launch demo modal
+    </button> -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div style="padding:0px 30px;">
+              <h2 class="font-alt">the good life starts here</h2>
+              <font class="font-alt" style="font-size:16px;text-transform:none !important;">Discover the best culinary and lifestyle<br />experiences in just a click away.</font>
+              <input class="form-control mt-30" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address.">
+              <button class="btn btn-d btn-round mt-20" type="submit">Join Us Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--
     JavaScripts
     =============================================
@@ -261,7 +280,12 @@
     <script src="assets/js/paginate.js"></script>
 
     <script>
-    $('.pus_np').paginate({ 'perPage': 6 });
+    setTimeout(function(){
+      $('#myModal').modal({
+        backdrop: 'static',
+        keyboard: false
+      })
+    }, 5000);
     </script>
   </body>
 </html>
