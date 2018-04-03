@@ -138,7 +138,7 @@
         </div>
       </section> -->
 
-        <section class="module bg-dark-60 parallax-bg" data-background="assets/image/cover2.jpg" id="bg_store">
+        <!-- <section class="module bg-dark-60 parallax-bg" data-background="assets/image/cover2.jpg" id="bg_store">
           <div class="container">
             <div class="row">
               <div class="col-sm-12">
@@ -176,6 +176,47 @@
                     <a class="next-arrow t_dc" id="next">Kobeshi Kitchen </a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+        <section class="module bg-dark-60 parallax-bg" data-background="assets/image/cover2.jpg" id="bg_store">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="font-alt mb-30 titan-title-size-1 text-center">
+                  <font class="landing_pt">Shabu Shabu House Group</font>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 hov_landing" id="kobe_hov">
+              <div class="font-alt mb-30 titan-title-size-1 text-center">
+                <h1 class="pus_st_title2 font-alt st_t_2">
+                  Kobeshi<br />
+                  <a href="shabu.html" class="pus_vst_str" style="font-size: 10px;">Enter</a>
+                </h1>
+                <a href="shabu.html"><img src="assets/image/coverd1.jpg" class="landing_img" /></a>
+              </div>
+            </div>
+            <div class="col-sm-4 hov_landing" id="s2h_hov">
+              <div class="font-alt mb-30 titan-title-size-1 text-center">
+                <h1 class="pus_st_title2 font-alt st_t_2">
+                  Shabu2House<br />
+                  <a href="shabu.html" class="pus_vst_str" style="font-size: 10px;">Enter</a>
+                </h1>
+                <a href="shabu.html"><img src="assets/image/coverd2.jpg" class="landing_img" /></a>
+              </div>
+            </div>
+            <div class="col-sm-4 hov_landing" id="koki_hov">
+              <div class="font-alt mb-30 titan-title-size-1 text-center">
+                <h1 class="pus_st_title2 font-alt st_t_2">
+                  Kobeshi Kitchen<br />
+                  <a href="shabu.html" class="pus_vst_str" style="font-size: 10px;">Enter</a>
+                </h1>
+                <a href="shabu.html"><img src="assets/image/coverd3.jpg" class="landing_img" /></a>
               </div>
             </div>
           </div>
@@ -286,6 +327,46 @@
         keyboard: false
       })
     }, 5000);
+
+    $('#s2h_hov').hover(function() {
+        $('#koki_hov').addClass('blurred');
+    }, function() {
+        $('#koki_hov').removeClass('blurred');
+    });
+
+    $('#s2h_hov').hover(function() {
+        $('#kobe_hov').addClass('blurred');
+    }, function() {
+        $('#kobe_hov').removeClass('blurred');
+    });
+
+    //-----
+
+    $('#kobe_hov').hover(function() {
+        $('#koki_hov').addClass('blurred');
+    }, function() {
+        $('#koki_hov').removeClass('blurred');
+    });
+
+    $('#kobe_hov').hover(function() {
+        $('#s2h_hov').addClass('blurred');
+    }, function() {
+        $('#s2h_hov').removeClass('blurred');
+    });
+
+    //-----
+
+    $('#koki_hov').hover(function() {
+        $('#kobe_hov').addClass('blurred');
+    }, function() {
+        $('#kobe_hov').removeClass('blurred');
+    });
+
+    $('#koki_hov').hover(function() {
+        $('#s2h_hov').addClass('blurred');
+    }, function() {
+        $('#s2h_hov').removeClass('blurred');
+    });
     </script>
   </body>
 </html>

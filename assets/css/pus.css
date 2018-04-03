@@ -807,6 +807,55 @@ body {
   color: white;
 }
 
+.pus_st_title2{
+  text-align: center;
+  color: white;
+  font-size:24px;
+}
+
+.hov_landing{
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -khtml-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.hov_landing:hover{
+  transform: translateY(-5px);
+}
+
+.landing_img{
+  margin-top: 10px;
+
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -khtml-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.hov_landing:hover .landing_img {
+  -webkit-box-shadow: 0px 0px 17px 2px #f78f1f;
+  -moz-box-shadow: 0px 0px 17px 2px #f78f1f;
+  box-shadow: 0px 0px 17px 2px #f78f1f;
+}
+
+#kobe_hov, #s2h_hov, #koki_hov{
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -khtml-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.blurred{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+
 .pus_vst_str{
   font-size: 14px;
   color: white !important;
