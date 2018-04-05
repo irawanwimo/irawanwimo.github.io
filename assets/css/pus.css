@@ -16,6 +16,11 @@ body {
 .hidden{
   opacity: 0 !important;
 }
+
+.nopadding{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
 /*----------------------------*\
       Coverflow Album Slider
 \*-----------------------------*/
@@ -1051,4 +1056,65 @@ nav.paginate-pagination > ul > li >a.active{
   display: flex !important;
   flex-direction: column;
   justify-content: center;
+}
+
+.shabu_menu_hover{
+
+}
+
+.c_white{
+  color: #fff !important;
+}
+
+.kobe_bg{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none !important;
+  /* background: none !important; */
+}
+.z_c_btn{
+  max-height:50px;
+}
+.z_row{
+  /* background: #f35762; */
+  display: flex;
+  align-items: center;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  -o-transition: all 0.1s ease-in-out 0s;
+  -khtml-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.z_f_web{
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  /* background: #f35762; */
+  background: #2f2f2f;
+  color:white;
+
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  -o-transition: all 0.1s ease-in-out 0s;
+  -khtml-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.z_f_web:hover{
+  /* background: #d84b55; */
+  color: #ff404d;
+}
+
+.shabu_img_zt > img{
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -khtml-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.shabu_img_zt:hover > img{
+  transform: translateY(-5px);
 }
