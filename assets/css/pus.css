@@ -1064,6 +1064,7 @@ nav.paginate-pagination > ul > li >a.active{
 
 .c_white{
   color: #fff !important;
+  /* color: #ed002b !important; */
 }
 
 .kobe_bg{
@@ -1071,6 +1072,10 @@ nav.paginate-pagination > ul > li >a.active{
   background-repeat: no-repeat;
   background-position: center;
   border: none !important;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /* background: none !important; */
 }
 .z_c_btn{
@@ -1117,4 +1122,22 @@ nav.paginate-pagination > ul > li >a.active{
 }
 .shabu_img_zt:hover > img{
   transform: translateY(-5px);
+}
+
+.kobe_font{
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.kobe_color{
+  color: #f78f1e !important;
+}
+
+.kobe_red{
+  color: #e74b39 !important;
+}
+
+.kobe_menu_details{
+  background: #fffef4;
+  padding: 30px 0px;
+  border-radius: 20px;
 }
