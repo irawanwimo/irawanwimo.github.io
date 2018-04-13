@@ -13,6 +13,29 @@ body {
   background: #333;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
 .hidden{
   opacity: 0 !important;
 }
@@ -1017,8 +1040,8 @@ nav.paginate-pagination > ul > li >a.active{
   padding-left: 0px !important;
 }
 .shabu_contact{
-  max-height: 400px;
-  height: 400px;
+  max-height: 450px;
+  height: 450px;
   background: #2f2f2f;
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -1031,8 +1054,8 @@ nav.paginate-pagination > ul > li >a.active{
   align-items: center;
 }
 .shabu_contact_r{
-  max-height: 400px;
-  height: 400px;
+  max-height: 450px;
+  height: 450px;
   background: #fff;
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -1198,4 +1221,15 @@ nav.paginate-pagination > ul > li >a.active{
   padding: 10px;
   font-size: 12px;
   color: white;
+}
+
+.modal-footer > p{
+  margin: 0px !important;
+}
+
+.work-image{
+  max-height: 275.5px !important;
+}
+.work-item:hover{
+  cursor: pointer;
 }
