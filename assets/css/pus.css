@@ -1050,7 +1050,6 @@ nav.paginate-pagination > ul > li >a.active{
 }
 
 .shabu_promo_a{
-  height: 390px;
   border: solid 1px black;
   background: #111;
   display: flex !important;
@@ -1183,4 +1182,20 @@ nav.paginate-pagination > ul > li >a.active{
       width: 70%;
       height: 40%;
     }
+}
+
+.shabu_past_pe{
+  padding: 18px;
+  background: #80808054;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.shabu_info_gal{
+  background: #2b2b2b;
+  padding: 10px;
+  font-size: 12px;
+  color: white;
 }

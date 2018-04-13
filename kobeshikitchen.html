@@ -8,7 +8,7 @@
     Document Title
     =============================================
     -->
-    <title>Shabu-Shabu House | About</title>
+    <title>Kobeshi Kitchen | Shabu Shabu House Group</title>
     <!--
     Favicons
     =============================================
@@ -82,63 +82,112 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-12">
-                <h2 class="pus_koki_hto">How to Order at Kobeshi Kitchen</h2>
+                <h2 class="pus_koki_hto">Gallery</h2>
                 <!-- <h5 class="font-alt">Shabu - Shabu House</h5> -->
                 <br/>
-                <div class="col-sm-4 text-center">
-                  <img src="assets/image/rice.png" style="margin-bottom: 20px;" /><br />
-                  <font class="pus_koki_text">1. Choose Your Carbo</font>
-                </div>
-                <div class="col-sm-4 text-center">
-                  <img src="assets/image/bowl_koki.png" style="margin-bottom: 20px;" /><br />
-                  <font class="pus_koki_text">2. Choose Your Soup</font>
-                </div>
-                <div class="col-sm-4 text-center">
-                  <img src="assets/image/topping.png" style="margin-bottom: 20px;" /><br />
-                  <font class="pus_koki_text">3. Add Your Toppings</font>
+                <style>
+                .carousel-control.right{
+                  background-image: none !important;
+                }
+                .carousel-control.left{
+                  background-image: none !important;
+                }
+                </style>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <!-- <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                  </ol> -->
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner gallery_group" style="max-height:80vh">
+                    <div class="item active">
+                      <img src="assets/image/koki/gallery/food1.jpg" style="margin:0 auto;max-height:80vh;">
+                    </div>
+
+                    <div class="item">
+                      <img src="assets/image/koki/gallery/food2.jpg" style="margin:0 auto;max-height:80vh;">
+                    </div>
+
+                    <div class="item">
+                      <img src="assets/image/koki/gallery/food3.jpg" style="margin:0 auto;max-height:80vh;">
+                    </div>
+
+                    <div class="item">
+                      <img src="assets/image/koki/gallery/food4.jpg" style="margin:0 auto;max-height:80vh;">
+                    </div>
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" style="color: black;"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" style="color: black;"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <hr class="divider-w">
-        <section class="module" id="team" style="background:#f8b454">
+        <section class="module" id="team" style="background:#edb74e">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="pus_koki_hto2">Shabu Shabu Menu</h2>
+                <h2 class="pus_koki_hto2">Promo</h2>
               </div>
             </div>
+          </div>
+          <div class="container">
             <div class="row">
-              <div class="col-md-6 text-center">
-                <div class="pus_max_h300 text-center">
-                  <img src="assets/image/koki_menu.png" class="pus_max_h300" style="margin-bottom: 20px;" /><br />
-                </div>
-                <font class="pus_koki_m_t">Chicken Collagen Set</font>
-                <p class="pus_koki_m_p text-center">Rp. 45.454<font class="pus_koki_m_a"> +Beef Rp. 74.544</font></p>
-              </div>
-              <div class="col-md-6 text-center">
-                <div class="pus_max_h300 text-center">
-                  <img src="assets/image/koki_menu2.png" class="pus_max_h300" style="margin-bottom: 20px;" /><br />
-                </div>
-                <font class="pus_koki_m_t">Tomyum Set</font>
-                <p class="pus_koki_m_p text-center">Rp. 45.454<font class="pus_koki_m_a"> +Beef Rp. 74.544</font></p>
-              </div>
-              <div class="col-md-6 text-center">
-                <div class="pus_max_h300 text-center">
-                  <img src="assets/image/koki_menu2.png" class="pus_max_h300" style="margin-bottom: 20px;" /><br />
-                </div>
-                <font class="pus_koki_m_t">Tomyum Set</font>
-                <p class="pus_koki_m_p text-center">Rp. 45.454<font class="pus_koki_m_a"> +Beef Rp. 74.544</font></p>
-              </div>
-              <div class="col-md-6 text-center">
-                <div class="pus_max_h300 text-center">
-                  <img src="assets/image/koki_menu.png" class="pus_max_h300" style="margin-bottom: 20px;" /><br />
-                </div>
-                <font class="pus_koki_m_t">Chicken Collagen Set</font>
-                <p class="pus_koki_m_p text-center">Rp. 45.454<font class="pus_koki_m_a"> +Beef Rp. 74.544</font></p>
+              <div class="col-sm-12">
+                <ul class="filter font-alt" id="filters">
+                  <li><a style="color:white;" class="current wow fadeInUp" href="#" data-filter="*">All</a></li>
+                  <li><a style="color:white;" class="wow fadeInUp" href="#" data-filter=".promo" data-wow-delay="0.2s">Promo</a></li>
+                  <li><a style="color:white;" class="wow fadeInUp" href="#" data-filter=".event" data-wow-delay="0.4s">Event</a></li>
+                </ul>
               </div>
             </div>
+            <style>
+              .work-image{
+                max-height: 275.5px !important;
+              }
+            </style>
+            <ul class="works-grid works-grid-gut works-grid-4 works-hover-w" id="works-grid">
+              <li class="work-item event" style="max-height:480px;">
+                <a class="shabu_promo_a" href="promo_single.html">
+                  <div class="work-image"><img src="assets/image/s2h/promo/promo1.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Promo/Event Title</h3>
+                    <div class="work-descr"></div>
+                  </div>
+                </a>
+              </li>
+              <li class="work-item promo" style="max-height:480px;">
+                <a class="shabu_promo_a" href="promo_single.html">
+                  <div class="work-image"><img src="assets/image/s2h/promo/promo4.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Promo/Event Title</h3>
+                    <div class="work-descr"></div>
+                  </div>
+                </a>
+              </li>
+              <li class="work-item event" style="max-height:480px;">
+                <a class="shabu_promo_a" href="promo_single.html">
+                  <div class="work-image"><img src="assets/image/s2h/promo/promo5.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Promo/Event Title</h3>
+                    <div class="work-descr"></div>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="module" style="background:#fbf4ec">
