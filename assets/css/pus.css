@@ -958,6 +958,10 @@ nav.paginate-pagination > ul > li >a.active{
   text-transform: uppercase;
 }
 
+.pus_koki_font{
+  font-family: 'Concert One', cursive;
+}
+
 .pus_koki_m_t{
   font-family: 'Concert One', cursive;
   position: relative;
@@ -1241,4 +1245,14 @@ nav.paginate-pagination > ul > li >a.active{
   border-radius: 10px;
   color: white;
   margin-bottom: 50px;
+}
+#kk_store{
+  /* padding: 70px 0px 30px 0px; */
+}
+
+.koki_box_store{
+  background: #fbf4ec;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 20px 0px;
 }
