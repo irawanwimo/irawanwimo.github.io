@@ -1256,3 +1256,17 @@ nav.paginate-pagination > ul > li >a.active{
   border-radius: 10px;
   padding: 20px 0px;
 }
+
+.landing_sub{
+  font-size: 14px;
+  text-transform: none;
+}
+
+.landing_sub_ins{
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: 1px;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+}
