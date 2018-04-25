@@ -1077,11 +1077,15 @@ nav.paginate-pagination > ul > li >a.active{
 }
 
 .shabu_promo_a{
-  border: solid 1px #ff8f82;
+  /* border: solid 1px #ff8f82; */
   background: #111;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
+
+  -webkit-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.15);
 }
 
 .shabu_menu_hover{
@@ -1226,12 +1230,12 @@ nav.paginate-pagination > ul > li >a.active{
 }
 
 .shabu_info_gal{
-  background: #2b2b2b;
+  /* background: #2b2b2b; */
   padding: 10px;
   font-size: 12px;
-  color: white;
+  color: #000;
   /* left: 50%;
-  transform: translateX(-50%);
+  transform: translate©X(-50%);
   max-width: 500px; */
 }
 
