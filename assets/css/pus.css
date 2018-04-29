@@ -1298,3 +1298,18 @@ nav.paginate-pagination > ul > li >a.active{
   text-transform: none;
   font-weight: 600;
 }
+
+.owlitem{
+  width: 100% !important;
+}
+.owl-nav{
+  text-align: center;
+  font-size: 40px;
+}
+.owl-nav > button{
+  margin: 0px 10px;
+  outline:none;
+}
+.owl-nav > button > span{
+  color: white;
+}

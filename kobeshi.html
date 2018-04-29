@@ -43,6 +43,8 @@
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <style>
       nav.paginate-pagination{
         text-align: center;
@@ -462,8 +464,8 @@
             <div style="margin: 70px 0px;text-align: center;">
               <font class="shabu_past_pe">Past</font>
             </div>
-            <ul class="works-grid works-grid-gut works-grid-4 works-hover-w" id="works-grid">
-              <li class="work-item event" style="max-height:480px;" data-toggle="modal" data-target="#myModal" imgpath="promop1.jpg">
+            <div class="works-grid works-grid-gut works-grid-4 works-hover-w owl-carousel" id="works-grid">
+              <div class="work-item owlitem event" style="max-height:480px;" data-toggle="modal" data-target="#myModal" imgpath="promop1.jpg">
                 <a class="shabu_promo_a">
                   <div class="work-image"><img src="assets/image/kobe/promo/promop1.jpg" alt="Portfolio Item"/></div>
                   <div class="work-caption font-alt">
@@ -471,8 +473,8 @@
                     <div class="work-descr"></div>
                   </div>
                 </a>
-              </li>
-              <li class="work-item promo" style="max-height:480px;" data-toggle="modal" data-target="#myModal" imgpath="promop2.jpg">
+              </div>
+              <div class="work-item owlitem promo" style="max-height:480px;" data-toggle="modal" data-target="#myModal" imgpath="promop2.jpg">
                 <a class="shabu_promo_a">
                   <div class="work-image"><img src="assets/image/kobe/promo/promop2.jpg" alt="Portfolio Item"/></div>
                   <div class="work-caption font-alt">
@@ -480,8 +482,8 @@
                     <div class="work-descr"></div>
                   </div>
                 </a>
-              </li>
-              <li class="work-item event" style="max-height:480px;" data-toggle="modal" data-target="#myModal" imgpath="promop3.jpg">
+              </div>
+              <div class="work-item owlitem event" style="max-height:480px;" data-toggle="modal" data-target="#myModal" imgpath="promop3.jpg">
                 <a class="shabu_promo_a">
                   <div class="work-image"><img src="assets/image/kobe/promo/promop3.jpg" alt="Portfolio Item"/></div>
                   <div class="work-caption font-alt">
@@ -489,8 +491,8 @@
                     <div class="work-descr"></div>
                   </div>
                 </a>
-              </li>
-              <li class="work-item event" style="max-height:480px;" data-toggle="modal" data-target="#myModal" imgpath="promop4.jpg">
+              </div>
+              <div class="work-item owlitem event" style="max-height:480px;" data-toggle="modal" data-target="#myModal" imgpath="promop4.jpg">
                 <a class="shabu_promo_a">
                   <div class="work-image"><img src="assets/image/kobe/promo/promop4.jpg" alt="Portfolio Item"/></div>
                   <div class="work-caption font-alt">
@@ -498,8 +500,8 @@
                     <div class="work-descr"></div>
                   </div>
                 </a>
-              </li>
-              <li class="work-item event" style="max-height:480px;" data-toggle="modal" data-target="#myModal" imgpath="promop5.jpg">
+              </div>
+              <div class="work-item owlitem event" style="max-height:480px;" data-toggle="modal" data-target="#myModal" imgpath="promop5.jpg">
                 <a class="shabu_promo_a">
                   <div class="work-image"><img src="assets/image/kobe/promo/promop5.jpg" alt="Portfolio Item"/></div>
                   <div class="work-caption font-alt">
@@ -507,8 +509,8 @@
                     <div class="work-descr"></div>
                   </div>
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
         </section>
@@ -628,8 +630,30 @@
     <script src="assets/js/paginate.js"></script>
     <script src="assets/js/instafeed.min.js"></script>
     <script type="text/javascript" src="assets/js/fontawesome-all.min.js"></script>
-
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script>
+    $('.owl-carousel').owlCarousel({
+      margin:10,
+      dots:true,
+      nav:true,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:2,
+              nav:true
+          },
+          600:{
+              items:3,
+              nav:false
+          },
+          1000:{
+              items:4,
+              nav:true,
+              loop:false
+          }
+      }
+    });
+    
     $('.gallery_group').each(function() { // the containers for all your galleries
         $(this).magnificPopup({
             delegate: 'a', // the selector for gallery item
