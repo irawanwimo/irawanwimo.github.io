@@ -181,7 +181,7 @@
           </div>
         </section>
         <hr class="divider-w">
-        <section class="module" id="kk_promo" style="background:#edb74e;background-image:url('assets/image/kobe/pattern4.png')">
+        <section class="module" id="kk_promo" style="background:#edb74e;background-image:url('assets/image/kobe/pattern5.png')">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
@@ -299,7 +299,7 @@
             </div>
           </div>
         </section>
-        <section class="module" id="kk_contact" style="background:#edb74e">
+        <section class="module" id="kk_contact"  style="background:#edb74e;background-image:url('assets/image/kobe/pattern5.png')">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
@@ -332,7 +332,10 @@
                       <div class="alt-features-item wow fadeInUp">
                         <div class="alt-features-icon"><span class="icon-pencil" aria-hidden="true"></span></div>
                         <h3 class="alt-features-title font-alt"><b>Review Us On</b></h3>
-                        <a class="shabu_img_zt" href="https://www.zomato.com/id/jakarta/kobeshi-kitchen-senayan/reviews" target="_blank"><img src="assets/image/s2h/zom_logo.png" style="max-height:30px;" /></a>
+                        <div style="margin-top:-10px;">
+                          <a class="shabu_img_zt" href="https://www.zomato.com/id/jakarta/kobeshi-kitchen-senayan/reviews" target="_blank"><img src="assets/image/s2h/zom_logo.png" style="max-height:30px;margin-top: -14px;margin-right: 5px;" /></a>
+                          <a style="font-size:30px;" data-container="body" data-toggle="popover" data-placement="top"><i class="fab fa-line"></i></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -358,7 +361,10 @@
                       <div class="alt-features-item wow fadeInUp">
                         <div class="alt-features-icon"><span class="icon-pencil" aria-hidden="true"></span></div>
                         <h3 class="alt-features-title font-alt"><b>Review Us On</b></h3>
-                        <a class="shabu_img_zt" href="https://www.zomato.com/id/jakarta/kobeshi-kitchen-gandaria/reviews" target="_blank"><img src="assets/image/s2h/zom_logo.png" style="max-height:30px;" /></a>
+                        <div style="margin-top:-10px;">
+                          <a class="shabu_img_zt" href="https://www.zomato.com/id/jakarta/kobeshi-kitchen-gandaria/reviews" target="_blank"><img src="assets/image/s2h/zom_logo.png" style="max-height:30px;margin-top: -14px;margin-right: 5px;" /></a>
+                          <a style="font-size:30px;" data-container="body" data-toggle="popover" data-placement="top"><i class="fab fa-line"></i></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -366,10 +372,15 @@
               </div>
               <div class="col-md-4 wow fadeInUp">
                 <div class="koki_box_store">
-                  <h3 class="text-center pus_koki_font" style="color:#ee012c;">Medan</h3>
+                  <h3 class="text-center pus_koki_font" style="color:#ee012c;">Sun Plaza Medan</h3>
 
                   <div class="row" style="padding:30px;">
                     <div class="col-md-12">
+                      <div class="alt-features-item mt-0 wow fadeInUp">
+                        <div class="alt-features-icon"><span class="icon-map"></span></div>
+                        <h3 class="alt-features-title font-alt"><b>Location</b></h3>
+                        Sun Plaza Medan,<br />Jl. KH. Zainul Arifin, <br />Kota Medan, Sumatera Utara
+                      </div>
                       <h4 class="text-center pus_koki_font" style="color:#ee012c;">Coming Soon</h4>
                     </div>
                   </div>
@@ -483,6 +494,17 @@
         img_path = $(this).attr('imgpath');
         $('#img_modal').attr('src','assets/image/koki/promo/'+img_path)
       });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover({
+              html: true,
+              trigger: 'hover',
+              content: function () {
+                return '<img src="assets/image/kobe/kobeqr.jpg" /><br/>';
+              }
+            });
+        });
     </script>
   </body>
 </html>
