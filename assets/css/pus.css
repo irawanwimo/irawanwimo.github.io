@@ -17,6 +17,13 @@ body.modal-open {
     overflow: hidden;
 }
 
+.centerfix{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 .modal {
   text-align: center;
 }
@@ -1312,4 +1319,10 @@ nav.paginate-pagination > ul > li >a.active{
 }
 .owl-nav > button > span{
   color: white;
+}
+
+.koki_about_right{
+  border: none;
+  color: #fff;
+  background: #edb74e;
 }
