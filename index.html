@@ -3,7 +3,7 @@
  	<head>
  		<meta charset="utf-8">
  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
- 		<title>Pus</title>
+ 		<title></title>
  		<meta name="description" content=" " />
  		<meta name="author" content=" " />
  		<meta name="HandheldFriendly" content="true" />
@@ -11,34 +11,94 @@
  		<!-- Use maximum-scale and user-scalable at your own risk. It disables pinch/zoom. Think about usability/accessibility before including.-->
  		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
  		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
- 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
- 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
  		<link rel="stylesheet" type="text/css" href="assets/css/pus.css">
- 		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto|IBM+Plex+Sans:100" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
  	</head>
  	<body>
-    <div class="row no-gutters pad10px">
-      <div class="col-md-4 pus_menu_left">
-        <a href="" class="">Home</a>
-        <a href="" class="">About</a>
-        <a href="" class="">Contact</a>
-      </div>
-      <div class="col-md-4">
-        <!-- <img src="assets/img/logo.jpg" alt="..." class="img-fluid"> -->
-        Pitacily
-      </div>
-      <div class="col-md-4 pus_menu_right">
-        <a href="" class="">Blogs</a>
-        <a href="" class="">About</a>
-        <a href="" class="">Contact</a>
+    <main>
+			<div class="content content--fixed">
+				<div class="debug">
+					<svg class="icon icon--debug" title="Toggle Debug Mode"><use xlink:href="#icon-debug"></use></svg>
+					<div class="timescale-wrap">
+						<label class="timescale-label">
+							<span class="timescale-title">Timescale:</span>
+							<span class="timescale-value">1.0</span>
+							<input class="timescale-range" type="range" min="0" max="3" step="0.1" value="1">
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="loader"></div>
+			<div class="content-outer">
+				<div class="content-inner">
+					<h1 class="posfix"></h1>
+					<a href="#" class="replay-animation posfix"></a>
+          <div id="particles-js">
+            <div id="pus-entrance">
+              <span id="caption"></span><span id="cursor">|</span>
+            </div>
+            <div id="pus-landing" style="display:none;">
+              <div id="pus-landing">
+                <img src="assets/image/logo2.png" />
+                <div class="pus_sub_logo">
+                  re-imagined what a website could be
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="mainMenu" class="mainMenuOverlay floating2" style="display:none;">
+            <div class="navire floating3"></div>
+            <div class="itemMenuBox bills"><a href="javascript:void(0)" class="itemMenu ">Unique</a></div>
+            <div class="itemMenuBox tarsheed"><a href="javascript:void(0)" class="itemMenu ">Stable</a></div>
+            <div class="itemMenuBox employees"><a href="javascript:void(0)" class="itemMenu ">About</a></div>
+            <div class="itemMenuBox location"><a href="javascript:void(0)" class="itemMenu ">credits</a></div>
+            <div class="itemMenuBox eservices"><a href="javascript:void(0)" class="itemMenu ">Contact</a></div>
+            <div class="itemMenuBox contact"><a href="javascript:void(0)" class="itemMenu ">Precise</a></div>
+
+            <a href="javascript:void(0)" class="toggleMenu floating" ><i class="fa fa-bars" aria-hidden="true"></i></a>
+          </div>
+				</div>
+			</div>
+		</main>
+
+    <!-- <div id="particles-js">
+      <div id="pus-landing">
+        <img src="assets/image/logo2.png" />
+        <div class="pus_sub_logo">
+          re-imagined what a website could be
+        </div>
       </div>
     </div>
+    <div id="mainMenu" class="mainMenuOverlay floating2">
+      <div class="navire floating3"></div>
+      <div class="itemMenuBox bills"><a href="https://codepen.io/mahmoud-nb/pen/ZOYdKm" target="_blank" class="itemMenu "><i class="fa fa-file-text-o" aria-hidden="true"></i></a></div>
+      <div class="itemMenuBox tarsheed"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-diamond" aria-hidden="true"></i></a></div>
+      <div class="itemMenuBox employees"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-users" aria-hidden="true"></i></a></div>
+      <div class="itemMenuBox location"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-location-arrow" aria-hidden="true"></i></a></div>
+      <div class="itemMenuBox eservices"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-key" aria-hidden="true"></i></a></div>
+      <div class="itemMenuBox contact"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-phone" aria-hidden="true"></i></a></div>
 
+      <a href="javascript:void(0)" class="toggleMenu floating" ><i class="fa fa-bars" aria-hidden="true"></i></a>
+    </div> -->
 
- 	<script type="text/javascript" src="assets/js/jquery.js"></script>
- 	<script type="text/javascript" src="assets/js/tether.js"></script>
- 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
- 	<script type="text/javascript" src="assets/js/wow.js"></script>
- 	<script type="text/javascript" src="assets/js/fontawesome-all.min.js"></script>
+   	<script type="text/javascript" src="assets/js/jquery.js"></script>
+   	<script type="text/javascript" src="assets/js/particles.js"></script>
+   	<script type="text/javascript" src="assets/js/app.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="js/vendor/three.min.js"></script>
+    <script src="js/vendor/OrbitControls.js"></script>
+    <script src="js/vendor/fast-simplex-noise.js"></script>
+    <script src="dist/js/demo-5/index.bundle.js"></script>
+    <script>
+    particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+
+    // $(".toggleMenu").on('click', function(){
+    //   $("#mainMenu").toggleClass('open');
+    // });
+    </script>
  	</body>
  </html>

@@ -1,31 +1,327 @@
-.pad10px{
-  padding: 10px;
+body{
+  background: linear-gradient(307deg, #003877, #006f79, #bb6ab5);
+  background-size: 600% 600%;
+
+  -webkit-animation: bGradient 19s ease infinite;
+  -moz-animation: bGradient 19s ease infinite;
+  animation: bGradient 19s ease infinite;
+
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.pus_menu_left{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 10px !important;
+@-webkit-keyframes bGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
-.pus_menu_left>a{
-  color: black;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-right: 20px;
-  font-size: 12px;
+@-moz-keyframes bGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
-.pus_menu_right{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 10px !important;
+.posfix{position: fixed !important;}
+
+#particles-js{
+  height: 100vh;
 }
-.pus_menu_right>a{
-  color: black;
+
+#pus-entrance{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+}
+
+#pus-entrance:hover{
+  cursor: default;
+}
+
+#pus-landing{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  width: 100%;
+}
+
+#pus-landing:hover{
+  cursor: default;
+}
+
+#pus-landing > img{
+  max-width: 150px;
+  padding: 25px;
+  background: #ffffff24;
+}
+
+.pus_logo{
+  padding: 10px 30px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  min-width: 200px;
+  font-weight: 600;
+}
+
+.pus_logo > span{
+  font-weight: 400;
+}
+
+.pus_sub_logo{
+  font-size: 12px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+
+/* ================================================ Menu Circle Starts */
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700);
+
+.navire{
+  background:url('../image/spaceship.png') no-repeat;
+  /* background:url(https://res.cloudinary.com/dioieuprs/image/upload/v1471359656/navire_n02z6s.png) no-repeat;  */
+  background-size:100% auto; width:120px; height:100px; position:absolute; top:-50px; right:-130px;-webkit-transition: right 0.2s ease; transition: right 0.2s ease; }
+
+.mainMenuOverlay.open .navire{right:70%;-webkit-transition: right 30s ease 1s; transition: right 30s ease 1s;}
+/* ### main Menu Overlay */
+.mainMenuOverlay {
+	background-color: rgba(0, 0, 0, 0.30);
+	position: fixed;left: 0;right: 0;bottom: -420px;z-index: 999;
+	height: 420px;
+	box-shadow: 0 0 15px -3px #03374A;
+  border-radius: 100% 100% 0 0 / 14% 14% 0 0;
+	-webkit-transition: bottom 0.5s ease; transition: bottom 0.5s ease;
+}
+
+.mainMenuOverlay.open {	bottom: 0; }
+
+.mainMenuOverlay .toggleMenu {
+	display: block;
+  background-color:#ffffff8c;
+  border-radius: 80px;
+	width: 62px;height: 62px;
+	position: absolute;top: -12px;left: 50%;
+	margin: -31px 0 0 -31px;
+	cursor: pointer;
+  font-size:24px; color:#FFF; text-align:center; line-height:62px;
+	box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2) inset, 0 0 16px -4px #063343;
+	-webkit-transition: box-shadow 0.5s ease, top 0.5s ease; transition: box-shadow 0.5s ease, top 0.5s ease;
+}
+
+.mainMenuOverlay .toggleMenu:hover, .mainMenuOverlay .toggleMenu:active{}
+
+.mainMenuOverlay.open .toggleMenu {	top: 50%;	background-color: #f35f5fa6;}
+
+.mainMenuOverlay .itemMenuBox {
+	background: url('../image/go2.png') no-repeat center center;background-size: 28px auto;
+	position: absolute;	top: 50%;	left: 50%;
+	margin: -31px 0 0 -31px;
+	height: 62px;	width: 142px;
+	text-align: right;
+	border-radius: 40px;
+	-webkit-transform-origin: 31px 31px;
+	-ms-transform-origin: 31px 31px;
+	transform-origin: 31px 31px;
+	-webkit-transition: all 1s ease 0.4s;
+	transition: all 1s ease 0.4s;
+}
+
+.mainMenuOverlay.open .itemMenuBox {width: 182px;	-webkit-transition: all 1s ease 0s;	transition: all 1s ease 0s;
+}
+
+.mainMenuOverlay .itemMenuBox.bills {-webkit-transform: rotate(270deg);	-ms-transform: rotate(270deg);	transform: rotate(270deg);
+}
+
+.mainMenuOverlay .itemMenuBox.tarsheed {-webkit-transform: rotate(330deg);	-ms-transform: rotate(330deg);	transform: rotate(330deg);
+}
+
+.mainMenuOverlay .itemMenuBox.employees {-webkit-transform: rotate(30deg);	-ms-transform: rotate(30deg);	transform: rotate(30deg);
+}
+
+.mainMenuOverlay .itemMenuBox.location {-webkit-transform: rotate(90deg);	-ms-transform: rotate(90deg);	transform: rotate(90deg);
+}
+
+.mainMenuOverlay .itemMenuBox.eservices {-webkit-transform: rotate(150deg);	-ms-transform: rotate(150deg);	transform: rotate(150deg);
+}
+
+.mainMenuOverlay .itemMenuBox.contact {-webkit-transform: rotate(210deg);	-ms-transform: rotate(210deg);	transform: rotate(210deg);
+}
+
+.mainMenuOverlay .itemMenuBox .itemMenu {
+  display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    background-color: #ffffff2b;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 62px;
+    height: 62px;
+    border-radius: 40px;
+    transition: all 0.8s ease;
+    color: #FFF;
+    font-size: 28px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.mainMenuOverlay .itemMenuBox .itemMenu{
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-right: 20px;
-  font-size: 12px;
 }
+
+.mainMenuOverlay .itemMenuBox.bills .itemMenu {
+	/*background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/file.png);
+	background-size: 20px auto;*/
+	-webkit-transform: rotate(90deg);	-ms-transform: rotate(90deg);	transform: rotate(90deg);
+}
+
+
+.mainMenuOverlay .itemMenuBox.tarsheed .itemMenu {
+	/* background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/tarsheed.png);
+	background-size: 38px auto;*/
+	-webkit-transform: rotate(30deg);	-ms-transform: rotate(30deg);	transform: rotate(30deg);
+}
+
+.mainMenuOverlay .itemMenuBox.employees .itemMenu {
+	/*background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/employees.png);
+	background-size: 38px auto;*/
+	-webkit-transform: rotate(330deg);-ms-transform: rotate(330deg);transform: rotate(330deg);
+}
+
+
+
+.mainMenuOverlay .itemMenuBox.location .itemMenu {
+	/*background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/marker.png);
+	background-size: 24px auto;*/
+	-webkit-transform: rotate(270deg);	-ms-transform: rotate(270deg);	transform: rotate(270deg);
+}
+
+
+
+.mainMenuOverlay .itemMenuBox.eservices .itemMenu {
+	/*background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/mouse.png);
+	background-size: 32px auto;*/
+	-webkit-transform: rotate(210deg);	-ms-transform: rotate(210deg);	transform: rotate(210deg);
+}
+
+
+
+.mainMenuOverlay .itemMenuBox.contact .itemMenu {
+	/*background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/phone.png);
+	background-size: 19px auto;*/
+	-webkit-transform: rotate(150deg);	-ms-transform: rotate(150deg);	transform: rotate(150deg);
+}
+
+/* Hover */
+/* .mainMenuOverlay .itemMenuBox.bills .itemMenu:hover {
+    -webkit-transform: rotate(450deg);	-ms-transform: rotate(450deg);	transform: rotate(450deg);
+}
+
+.mainMenuOverlay .itemMenuBox.tarsheed .itemMenu:hover {
+    -webkit-transform: rotate(390deg);	-ms-transform: rotate(390deg);	transform: rotate(390deg);
+}
+
+.mainMenuOverlay .itemMenuBox.employees .itemMenu:hover {
+    -webkit-transform: rotate(690deg);	-ms-transform: rotate(690deg);	transform: rotate(690deg);
+}
+
+.mainMenuOverlay .itemMenuBox.location .itemMenu:hover {
+    -webkit-transform: rotate(630deg);	-ms-transform: rotate(630deg);	transform: rotate(630deg);
+}
+
+.mainMenuOverlay .itemMenuBox.eservices .itemMenu:hover {
+    -webkit-transform: rotate(570deg);	-ms-transform: rotate(570deg);	transform: rotate(570deg);
+}
+
+.mainMenuOverlay .itemMenuBox.contact .itemMenu:hover {
+    -webkit-transform: rotate(510deg);	-ms-transform: rotate(510deg);	transform: rotate(510deg);
+} */
+
+
+
+.floating{
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 5px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 5px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+
+.floating2{
+    -webkit-animation-name: Floatingx2;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating2;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floatingx2{
+    from {-webkit-transform:translate(0, 0px);}
+    45% {-webkit-transform:translate(0, 8px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating2{
+    from {-moz-transform:translate(0, 0px);}
+    45% {-moz-transform:translate(0, 8px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+
+.floating3{
+    -webkit-animation-name: Floatingx3;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating3;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floatingx3{
+    from {-webkit-transform:translate(0, 0px);}
+    50% {-webkit-transform:translate(2px, 4px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating3{
+    from {-moz-transform:translate(0, 0px);}
+    50% {-moz-transform:translate(2px, 4px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+/* ================================================ Menu Circle Ends */
