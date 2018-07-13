@@ -11,9 +11,9 @@ display: none;
 body {
   background-color: #2c2c2c;
   /* background: radial-gradient(ellipse at center, #444756 0%,#1d1b26 100%); */
-  /* background: radial-gradient(ellipse at center, #29382c 0%, #0c100d 100%);
-  background: radial-gradient(ellipse at center, #352121 0%, #000000 70%); */
-  background: radial-gradient(ellipse at center, #272727 0%, #000000 70%);
+  /* background: radial-gradient(ellipse at center, #29382c 0%, #0c100d 100%); */
+  background: radial-gradient(ellipse at center, #352121 0%, #000000 70%);
+  /* background: radial-gradient(ellipse at center, #272727 0%, #000000 70%); */
   color: #fff;
 
   /* background: #000; */
@@ -380,7 +380,7 @@ label {
   width: 100px;
   background:#000;
   color: #fff;
-  border: solid 1px #ffffff25;
+  border: solid 1px #ff00003d;
   /* border:solid 1px #fff; */
 
   -webkit-touch-callout: none;
@@ -824,7 +824,7 @@ input {
   right: -500px;
   bottom: -500px;
   left: -500px;
-  background: transparent url('../img/noise.png') 0 0;
+  /* background: transparent url('../img/noise.png') 0 0; */
   background-size: 320px 320px;
 	opacity: .35;
 	animation: noise 1s steps(8,end) infinite both;
