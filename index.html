@@ -1,105 +1,393 @@
 <!DOCTYPE html>
- <html>
- 	<head>
- 		<meta charset="utf-8">
- 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
- 		<title>P U S // Project</title>
- 		<meta name="description" content=" " />
- 		<meta name="author" content=" " />
- 		<meta name="HandheldFriendly" content="true" />
- 		<meta name="MobileOptimized" content="320" />
- 		<!-- Use maximum-scale and user-scalable at your own risk. It disables pinch/zoom. Think about usability/accessibility before including.-->
- 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
- 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="icon" href="assets/image/logo2.png" />
- 		<link rel="stylesheet" type="text/css" href="assets/css/pus.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto|IBM+Plex+Sans:100" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
- 	</head>
- 	<body>
-    <main>
-			<div class="content content--fixed">
-				<div class="debug">
-					<svg class="icon icon--debug" title="Toggle Debug Mode"><use xlink:href="#icon-debug"></use></svg>
-					<div class="timescale-wrap">
-						<label class="timescale-label">
-							<span class="timescale-title">Timescale:</span>
-							<span class="timescale-value">1.0</span>
-							<input class="timescale-range" type="range" min="0" max="3" step="0.1" value="1">
-						</label>
-					</div>
-				</div>
-			</div>
-			<div class="loader"></div>
-			<div class="content-outer">
-				<div class="content-inner">
-					<h1 class="posfix"></h1>
-					<a href="#" class="replay-animation posfix"></a>
-          <div id="particles-js">
-            <div id="pus-entrance">
-              <span id="caption"></span><span id="cursor">|</span>
-            </div>
-            <div id="pus-landing" style="display:none;">
-              <div id="pus-landing">
-                <img src="assets/image/logo2.png" />
-                <div class="pus_sub_logo">
-                  re-imagine what a website could be
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="mainMenu" class="mainMenuOverlay floating2" style="display:none;">
-            <div class="navire floating3"></div>
-            <div class="itemMenuBox bills"><a href="javascript:void(0)" class="itemMenu ">Unique</a></div>
-            <div class="itemMenuBox tarsheed"><a href="javascript:void(0)" class="itemMenu ">Stable</a></div>
-            <div class="itemMenuBox employees"><a href="javascript:void(0)" class="itemMenu ">About</a></div>
-            <div class="itemMenuBox location"><a href="javascript:void(0)" class="itemMenu ">credits</a></div>
-            <div class="itemMenuBox eservices"><a href="javascript:void(0)" class="itemMenu ">Contact</a></div>
-            <div class="itemMenuBox contact"><a href="javascript:void(0)" class="itemMenu ">Precise</a></div>
+<html lang="en">
+<head>
+  <title>WimoRa</title>
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="favicon.png" />
+  <meta name="author" content="wimora">
+  <meta name="description" content="">
 
-            <a href="javascript:void(0)" class="toggleMenu floating" ><i class="fa fa-bars" aria-hidden="true"></i></a>
-          </div>
-				</div>
-			</div>
-		</main>
+  <!-- STYLES -->
+  <link href="css/wimo.css" rel="stylesheet" type="text/css" />
+  <link href="css/animate.css" rel="stylesheet" type="text/css" />
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
 
-    <!-- <div id="particles-js">
-      <div id="pus-landing">
-        <img src="assets/image/logo2.png" />
-        <div class="pus_sub_logo">
-          re-imagined what a website could be
+</head>
+<body class="main_bd">
+  <!-- <div id="op" class="wim-optext glitch w120 op1" data-text="Hello there">Hello there</div>
+  <div id="op2" class="wim-optext glitch w240 op2" data-text="I'll show you something" style="display: none;">I'll show you something</div>
+  <div id="op3" class="wim-optext glitch w140 op3" data-text="let me load it" style="display: none;">let me load it</div>
+  <div id="op4" class="wim-optext glitch w240 op4" data-text="oh right, with music" style="display: none;">oh right, with music</div>
+  <div id="op5" class="wim-optext2 glitch w140 op5" data-text="here, a box" style="display: none;">Here, a box</div>
+  <div id="op6" class="wim-optext4 glitch op6 noselect" data-text="click on prologue" style="display: none;">click on prologue</div>
+  <div id="op7" class="wim-optext3 glitch w190 op7 noselect vishid" data-text="Irawan dwihastomo" style="display: none;">Irawan dwihastomo</div>
+  <div style="width: 50%;" id="wim-load">
+    <div class="progress-wrap progress" data-progress-percent="100">
+      <div class="progress-bar progress"></div>
+    </div>
+  </div> -->
+
+  <!-- <div class="main-wrapper"> -->
+    <div class="noise-wrapper">
+      <div class="noise"></div>
+    </div>
+  <!-- </div> -->
+
+<div class="boxcontent">
+
+  <!-- <div id="wrapper" class="vishid"> -->
+  <div id="wrapper" class="">
+    <div class="viewport">
+      <div class="cube">
+        <div class="side">
+          <div id="cube6" class="cube-image"><i class="fa fa-list-ul" aria-hidden="true"></i></div>
+        </div>
+        <div class="side">
+          <div id="cube5" class="cube-image"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+        </div>
+        <div class="side">
+          <div id="cube4" class="cube-image"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+        </div>
+        <div class="side">
+          <div id="cube3" class="cube-image"><i class="fa fa-user-circle" aria-hidden="true"></i></div>
+        </div>
+        <div class="side">
+          <div id="cube2" class="cube-image"><i class="fa fa-code" aria-hidden="true"></i></div>
+        </div>
+        <div class="side">
+          <div id="cube1" class="cube-image active" style="font-size: 12px;">WIMO BOX</div>
         </div>
       </div>
     </div>
-    <div id="mainMenu" class="mainMenuOverlay floating2">
-      <div class="navire floating3"></div>
-      <div class="itemMenuBox bills"><a href="https://codepen.io/mahmoud-nb/pen/ZOYdKm" target="_blank" class="itemMenu "><i class="fa fa-file-text-o" aria-hidden="true"></i></a></div>
-      <div class="itemMenuBox tarsheed"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-diamond" aria-hidden="true"></i></a></div>
-      <div class="itemMenuBox employees"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-users" aria-hidden="true"></i></a></div>
-      <div class="itemMenuBox location"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-location-arrow" aria-hidden="true"></i></a></div>
-      <div class="itemMenuBox eservices"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-key" aria-hidden="true"></i></a></div>
-      <div class="itemMenuBox contact"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-phone" aria-hidden="true"></i></a></div>
+  </div>
 
-      <a href="javascript:void(0)" class="toggleMenu floating" ><i class="fa fa-bars" aria-hidden="true"></i></a>
-    </div> -->
+  <!-- <div class="wim-head noselect vishid" id="whatis" style="margin-top: 50px;"> -->
+  <div class="wim-head noselect" id="whatis" style="margin-top: 50px;">
+    <div id="attach">
+      <a class="mgc clicksound" id="prologue" href="#prologuemodal">prologue</a>
+      <a class="mgc clicksound" id="prologue2" href="#prologuemodal2" style="display: none">prologue</a>
+      <a class="mgc clicksound" id="credits" href="#creditsmodal" style="display: none"><!-- <i class="fa fa-list-ul" aria-hidden="true"></i>  -->credits</a>
+      <a class="mgc clicksound" id="educ" href="#educmodal" style="display: none"><!-- <i class="fa fa-graduation-cap" aria-hidden="true"></i>  -->education</a>
+      <a class="mgc clicksound" id="exper" href="#expermodal" style="display: none"><!-- <i class="fa fa-briefcase" aria-hidden="true"></i>  -->experiences</a>
+      <a class="mgc clicksound" id="skill" href="#skillmodal" style="display: none"><!-- <i class="fa fa-code" aria-hidden="true"></i>  -->skills</a>
+      <a class="mgc clicksound" id="prof" href="#profmodal" style="display: none"><!-- <i class="fa fa-user-circle" aria-hidden="true"></i>  -->profile</a>
+    </div>
+  </div>
 
-   	<script type="text/javascript" src="assets/js/jquery.js"></script>
-   	<script type="text/javascript" src="assets/js/particles.js"></script>
-   	<script type="text/javascript" src="assets/js/app.js"></script>
-    <script src="js/demo.js"></script>
-    <script src="js/vendor/three.min.js"></script>
-    <script src="js/vendor/OrbitControls.js"></script>
-    <script src="js/vendor/fast-simplex-noise.js"></script>
-    <script src="dist/js/demo-5/index.bundle.js"></script>
-    <script>
-    particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {
-      console.log('callback - particles.js config loaded');
+  <div class="wim-head noselect" id="bestexp" style="margin-top: 30px;">
+    <font class="bestexp">
+      best experience with <i class="fa fa-laptop" aria-hidden="true"></i> + <i class="fa fa-chrome" aria-hidden="true"></i> + <i class="fa fa-headphones" aria-hidden="true"></i>
+    </font>
+  </div>
+
+</div>
+
+  <div class="wim-modal" id="prologuemodal">
+    <div class="modal-content">
+
+      <div class="modalhead">
+        <div class="close-prologuemodal closemod anim clicksound">
+          <div class="outer">
+            <div class="inner">
+              <label>Back</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="anim" style="width: 100%;margin: auto;">
+          <table class="tb-prologue">
+            <tr>
+              <td class="td-pro">P</td>
+              <td class="td-pro">r</td>
+              <td class="td-pro">o</td>
+              <td class="td-pro">l</td>
+            </tr>
+            <tr>
+              <td class="td-pro">o</td>
+              <td class="td-pro">g</td>
+              <td class="td-pro">u</td>
+              <td class="td-pro">e</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div style="height: 100%;overflow: auto;">
+        <div class="procont">
+          <p class="prohead anim" id="prohead1">
+            <font id="prohide1">To</font> think <font id="prohide2">outside the box<br>you need</font> to understand the box
+          </p>
+          <p class="prohead2" id="prohead2" style="display: none;">
+             <font style="font-weight: 600;">Wimo box:</font><br>
+             The box is rotatable and will show you different informations<br>
+             Just click and drag the way you want<br>
+             if you're on mobile phone, there will be no sound<br>
+             and if you're on android chrome, be careful you might reload the page
+            </p>
+          <div class="circle-wrapper circle" id="probtn">
+            <div class="circle pulse"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="wim-modal" id="prologuemodal2">
+      <div class="modal-content">
+
+        <div class="modalhead">
+          <div class="close-prologuemodal2 closemod anim clicksound">
+            <div class="outer">
+              <div class="inner">
+                <label>Back</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="anim" style="width: 100%;margin: auto;">
+            <table class="tb-prologue">
+              <tr>
+                <td class="td-pro">P</td>
+                <td class="td-pro">r</td>
+                <td class="td-pro">o</td>
+                <td class="td-pro">l</td>
+              </tr>
+              <tr>
+                <td class="td-pro">o</td>
+                <td class="td-pro">g</td>
+                <td class="td-pro">u</td>
+                <td class="td-pro">e</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div style="height: 100%;overflow: auto;">
+          <div class="procont">
+            <p class="prohead anim" id="prohead3">
+              <font id="prohide3">To</font> think <font id="prohide4">outside the box<br>you need</font> to understand the box
+            </p>
+            <p class="prohead2" id="prohead4" style="display: none;">
+             <font style="font-weight: 600;">Wimo box:</font><br>
+             - The box is rotatable and will show you different informations<br>
+             - Just click and drag the way you want<br>
+             - if you're on mobile phone, there will be no sound<br>
+             - and if you're on android chrome, be careful you might reload the page
+            </p>
+            <div class="circle-wrapper circle" id="probtn2">
+              <div class="circle pulse"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+  <div class="wim-modal" id="profmodal">
+    <div class="modal-content bgprof">
+
+      <div class="modalhead">
+        <div class="close-profmodal closemod anim clicksound">
+          <div class="outer">
+            <div class="inner">
+              <label>Back</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="anim" style="width: 100%;margin: auto;">
+          <table class="tb-prologue">
+            <tr>
+              <td class="td-pro">P</td>
+              <td class="td-pro">r</td>
+              <td class="td-pro">o</td>
+              <td class="td-pro">f</td>
+            </tr>
+            <tr>
+              <td class="td-pro">i</td>
+              <td class="td-pro">l</td>
+              <td class="td-pro">e</td>
+              <td class="td-pro">s</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="profabout">
+        
+      </div>
+
+    </div>
+  </div>
+
+  <audio id="bgm" loop>
+    <source src="bensound-betterdays.mp3">
+  </audio>
+  <audio id="modalclick">
+    <source src="sound/Fuzzy Beep-SoundBible.com-1580329899.mp3">
+  </audio>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/wimo.js"></script>
+  <script type="text/javascript" src="js/animatedModal.js"></script>
+  <script type="text/javascript" src="js/velocity.js"></script>
+  <script type="text/javascript" src="js/tweenmax.js"></script>
+  <script type="text/javascript" src="js/parallax.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
+
+  <script>
+    var bgm = document.getElementById("bgm");
+
+    // $(".clicksound").click(function(){
+    //   var click = document.getElementById("modalclick");
+    //   click.play();
+    // });
+    // $(document).ready(function() {
+    //   $('#modalclick').prop('volume', 0.30);
+    // })
+
+    $("#prologue").animatedModal({
+      modalTarget:'prologuemodal',
+      animatedIn: 'zoomIn',
+      animatedOut:'zoomOut',
+      color:'#000',
+
+      afterOpen: function() {
+        var children = $(".anim");
+        var index = 0;
+
+        function addClassNextChild() {
+            if (index == children.length) return;
+            children.eq(index++).show().velocity("transition.slideUpIn", { opacity:1, stagger: 250 });
+            window.setTimeout(addClassNextChild, 200);
+        }
+        addClassNextChild();
+
+      },
+      afterClose: function() {
+        proseq = 0;
+        $("#prohead2").hide();
+        $(".anim").hide();
+        $("#prohide1").removeClass("fade").css("opacity", 1);
+        $("#prohide2").removeClass("fade").css("opacity", 1);
+      }
+
     });
 
-    // $(".toggleMenu").on('click', function(){
-    //   $("#mainMenu").toggleClass('open');
-    // });
-    </script>
- 	</body>
- </html>
+    $("#prologue2").animatedModal({
+      modalTarget:'prologuemodal2',
+      animatedIn: 'zoomIn',
+      animatedOut:'zoomOut',
+      color:'#000',
+
+      afterOpen: function() {
+        var children = $(".anim");
+        var index = 0;
+
+        function addClassNextChild() {
+            if (index == children.length) return;
+            children.eq(index++).show().velocity("transition.slideUpIn", { opacity:1, stagger: 250 });
+            window.setTimeout(addClassNextChild, 300);
+        }
+        addClassNextChild();
+
+      },
+      afterClose: function() {
+        proseq = 0;
+        $("#prohead4").hide();
+        $(".anim").hide();
+        $("#prohide3").removeClass("fade").css("opacity", 1);
+        $("#prohide4").removeClass("fade").css("opacity", 1);
+      }
+    });
+
+    $("#prof").animatedModal({
+      modalTarget:'profmodal',
+      animatedIn: 'zoomIn',
+      animatedOut:'zoomOut',
+      color:'#000',
+
+      // beforeOpen: function() {
+      //   $("#scene").hide();
+
+      // },
+      afterOpen: function() {
+        var children = $(".anim");
+        var index = 0;
+
+        function addClassNextChild() {
+            if (index == children.length) return;
+            children.eq(index++).show().velocity("transition.slideUpIn", { opacity:1, stagger: 250 });
+            window.setTimeout(addClassNextChild, 300);
+        }
+        addClassNextChild();
+
+      },
+      afterClose: function() {
+        $(".anim").hide();
+      }
+    });
+
+    var n = 0;
+
+    $("#prologue").click(function(){
+      // clickbtn();
+      $('#op6').hide();
+      n++;
+      // bgm.muted = true;
+    });
+
+    $("#prologue2").click(function(){
+      // clickbtn();
+      $('#op6').hide();
+      n++;
+      // bgm.muted = true;
+    });
+
+    $(".close-prologuemodal").click(function(){
+      if(n == 1){
+        op7();
+        // clickbtn();
+      }
+      // clickbtn();
+      // bgm.muted = false;
+    });
+
+    $(".close-prologuemodal2").click(function(){
+      if(n == 1){
+        op7();
+        // clickbtn();
+      }
+      // clickbtn();
+      // bgm.muted = false;
+    });
+
+  </script>
+
+  <script>
+  window.onload = function() {
+    TweenMax.from('.circle', 0.4, {
+      scale: 0,
+      transformOrigin: "center center",
+      ease: Power1.easeInOut,
+      onComplete: function() {
+        TweenMax.to('.pulse', 1, {
+          scale: 1.4,
+          transformOrigin: "center center",
+          opacity: 0,
+          repeat: -1,
+          delay: 0.5
+        });
+      }
+    });
+  };
+
+
+  </script>
+
+</body>
+</html>
