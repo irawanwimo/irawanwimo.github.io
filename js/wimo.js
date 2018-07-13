@@ -394,9 +394,9 @@ Cube.prototype.sideChange = function() {
 
   }else if(this.viewport.currentSide == 6){
     //prologue2
-    $("#prologue2").show();
+    $("#prologue").show();
 
-    $("#prologue").hide();
+    // $("#prologue").hide();
     $("#credits").hide();
     $("#educ").hide();
     $("#exper").hide();
