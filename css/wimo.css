@@ -200,6 +200,7 @@ audio{
   flex-direction: column;
   justify-content: center;
   margin-bottom: 30px;
+  height: 100%;
 }
 .prohead{
   border-left: solid 5px;
