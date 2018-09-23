@@ -83,7 +83,7 @@ audio{
   display: none;
 }
 .progress-wrap .progress-bar {
-  background: #313131;
+  background: #2d1b1b;
   left: 0;
   position: absolute;
   top: 0;
@@ -129,11 +129,13 @@ audio{
   /*border: 1px solid;*/
   padding: 5px 14px 5px 17px;
   font-size: 12px;
-  background: rgba(49, 49, 49, 0.58);
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  background: rgb(31, 19, 20);;
+  box-shadow: inset 0 0 20px rgba(255, 5, 5, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388;
+  text-decoration: none;
+  color: white;
 
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -213,6 +215,9 @@ audio{
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 5px;
+
+  transform: translateY(40%);
+  margin-bottom: 40px;
 }
 
 .prohead2{
@@ -374,9 +379,13 @@ label {
   opacity: 1;
   height: 100px;
   width: 100px;
-  background:#000;
+  /* background:#000; */
+  /* background-image: linear-gradient(to left bottom, #d82e2e, #a51849, #671e4a, #2e1a32, #050505); */
+  /* background-image: linear-gradient(to right top, #a71f1f, #88183c, #5d2244, #342337, #1b1b1b); */
+  /* background-image: linear-gradient(to right top, #c14242, #a73534, #8e2827, #761b1a, #5e0e0e); */
+  background-image: linear-gradient(to right top, #3d0a0a, #360a0a, #2e0a09, #270807, #210505);
   color: #fff;
-  border: solid 1px #ff00003d;
+  /* border: solid 1px #2d1b1b; */
   /* border:solid 1px #fff; */
 
   -webkit-touch-callout: none;
@@ -404,7 +413,7 @@ label {
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
-  color: #2d2d2d;
+  color: #825757;
   -webkit-transition: color 600ms;
   -moz-transition: color 600ms;
   -ms-transition: color 600ms;
@@ -413,8 +422,9 @@ label {
 }
 
 .cube > div > div.cube-image.active {
-  color: #c54343;
-  background: #000;
+  /* color: #c54343; */
+  color: #fff;
+  /* background: #000; */
 }
 
 .cube > div:hover {
@@ -539,7 +549,7 @@ object:hover {
 
 .wim-optext3{
   padding: 5px;
-  background: #8e3232;
+  background: #520d0d;
   text-align: center;
   color: white;position: fixed;top: 25%;left: 50%;transform: translate(-48%,-50%);
   letter-spacing: 3px;font-size: 12px;text-transform: uppercase;width: 300px;
@@ -860,3 +870,39 @@ input {
     transform: translate(-100px, 100px);
   }
 }
+
+/* PROFILE ======== */
+.wm_name{
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+}
+
+@media (max-width: 995px) {
+  .wm_name{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    text-align: center;
+  }
+}
+
+.wm_photo{
+  background: url('../img/profile.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+.wm_desc{
+  padding: 20px;
+  border: solid 1px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.nomargin{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+/* PROFILE ======== */
