@@ -1,406 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>WimoRa</title>
-  <!-- META TAGS -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="icon" href="favicon.png" />
-  <meta name="author" content="wimora">
-  <meta name="description" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wimo</title>
 
-  <!-- STYLES -->
-  <link href="css/wimo.css" rel="stylesheet" type="text/css" />
-  <link href="css/animate.css" rel="stylesheet" type="text/css" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="wimo.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One|Passion+One|Courier+Prime:wght@700&display=swap|PT+Sans:700|Pacifico|Changa+One' rel='stylesheet' type='text/css'>
 </head>
-<body class="main_bd">
-  <div id="op" class="wim-optext glitch w120 op1" data-text="Hello there">Hello there</div>
-  <div id="op2" class="wim-optext glitch w240 op2" data-text="I'll show you something" style="display: none;">I'll show you something</div>
-  <div id="op3" class="wim-optext glitch w140 op3" data-text="let me load it" style="display: none;">let me load it</div>
-  <div id="op4" class="wim-optext glitch w240 op4" data-text="finalizing the box" style="display: none;">finalizing the box</div>
-  <div id="op5" class="wim-optext2 glitch w140 op5" data-text="here, a box" style="display: none;">Here, a box</div>
-  <div id="op6" class="wim-optext4 glitch op6 noselect" data-text="click on prologue" style="display: none;">click on prologue</div>
-  <div id="op7" class="wim-optext3 glitch w190 op7 noselect vishid" data-text="Irawan dwihastomo" style="display: none;">Irawan dwihastomo</div>
-  <div style="width: 50%;" id="wim-load">
-    <div class="progress-wrap progress" data-progress-percent="100">
-      <div class="progress-bar progress"></div>
-    </div>
-  </div>
+<body class="max-height-100vh">
+    <div class="site-wrap overflow-hidden">
+        <div class="panel-wrap animate--shrink">
+            <div class="panel" data-x-pos="0"  data-y-pos="0">
+                <span class="z-index-99 panel__nav panel__nav--up js-up">Profile</span>
+                <!-- <span class="z-index-99 panel__nav panel__nav--right-top js-up js-right">up/right</span> -->
+                <!-- <span class="z-index-99 panel__nav panel__nav--left-top bg-menu js-zoom"><i class="fas fa-bars"></i></span> -->
+                <span class="z-index-99 panel__nav panel__nav--left js-left">Exp</span>
+                <span class="z-index-99 panel__nav panel__nav--right js-right">Porto</span>
+                <!-- <span class="z-index-99 panel__nav panel__nav--right-down js-down js-right">down/right</span> -->
+                <!-- <span class="z-index-99 panel__nav panel__nav--left-down js-down js-left">down/left</span> -->
+                <span class="z-index-99 panel__nav panel__nav--down js-down">Skills</span>
+                <div class="main-title z-index-99">
+                    <h4 class="main-sub-h4">The Multiverse of</h4>
+                    <h2 style="margin-top: 10px;margin-bottom: 20px;">Irawan Dwihastomo</h2>
+                    <span class="js-zoom">View All</span>
+                </div>
+                
+                <div id="particles-background" class="vertical-centered-box"></div>
+                <div id="particles-foreground" class="vertical-centered-box"></div>
 
-  <!-- <div class="main-wrapper"> -->
-    <!-- <div class="noise-wrapper">
-      <div class="noise"></div>
-    </div> -->
-  <!-- </div> -->
 
-<div class="boxcontent">
-
-  <div id="wrapper" class="vishid">
-  <!-- <div id="wrapper" class=""> -->
-    <div class="viewport">
-      <div class="cube">
-        <div class="side">
-          <div id="cube6" class="cube-image"><i class="fa fa-list-ul" aria-hidden="true"></i></div>
-        </div>
-        <div class="side">
-          <div id="cube5" class="cube-image"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
-        </div>
-        <div class="side">
-          <div id="cube4" class="cube-image"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
-        </div>
-        <div class="side">
-          <div id="cube3" class="cube-image"><i class="fa fa-user-circle" aria-hidden="true"></i></div>
-        </div>
-        <div class="side">
-          <div id="cube2" class="cube-image"><i class="fa fa-code" aria-hidden="true"></i></div>
-        </div>
-        <div class="side">
-          <div id="cube1" class="cube-image active" style="font-size: 12px;">WIMO BOX</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="wim-head noselect vishid" id="whatis" style="margin-top: 50px;">
-  <!-- <div class="wim-head noselect" id="whatis" style="margin-top: 50px;"> -->
-    <div id="attach">
-      <a class="mgc clicksound" id="prologue" href="#prologuemodal">prologue</a>
-      <!-- <a class="mgc clicksound" id="prologue2" href="#prologuemodal2" style="display: none">prologue</a> -->
-      <a class="mgc clicksound" id="credits" href="#creditsmodal" style="display: none"><!-- <i class="fa fa-list-ul" aria-hidden="true"></i>  -->credits</a>
-      <a class="mgc clicksound" id="educ" href="#educmodal" style="display: none"><!-- <i class="fa fa-graduation-cap" aria-hidden="true"></i>  -->education</a>
-      <a class="mgc clicksound" id="exper" href="#expermodal" style="display: none"><!-- <i class="fa fa-briefcase" aria-hidden="true"></i>  -->experiences</a>
-      <a class="mgc clicksound" id="skill" href="#skillmodal" style="display: none"><!-- <i class="fa fa-code" aria-hidden="true"></i>  -->skills</a>
-      <a class="mgc clicksound" id="prof" href="#profmodal" style="display: none"><!-- <i class="fa fa-user-circle" aria-hidden="true"></i>  -->profile</a>
-    </div>
-  </div>
-
-  <div class="wim-head noselect" id="bestexp" style="margin-top: 30px;">
-    <font class="bestexp">
-      best experience with <i class="fa fa-laptop" aria-hidden="true"></i> + <i class="fa fa-chrome" aria-hidden="true"></i> + <i class="fa fa-headphones" aria-hidden="true"></i>
-    </font>
-  </div>
-
-</div>
-
-  <div class="wim-modal" id="prologuemodal">
-    <div class="modal-content">
-
-      <div class="modalhead">
-        <div class="close-prologuemodal closemod anim">
-          <div class="outer">
-            <div class="inner">
-              <label>Back</label>
+                <!-- <div class="panel__animation-list">
+                    <span class="js-animation active" data-animation="animate--none">None</span>
+                    <span class="js-animation" data-animation="animate--shrink">Shrink</span>
+                    <span class="js-animation" data-animation="animate--tilt">Tilt</span>
+                    <span class="js-animation" data-animation="animate--tilt2">Tilt-2</span>
+                </div> -->
             </div>
-          </div>
-        </div>
 
-        <div class="anim" style="width: 100%;margin: auto;">
-          <table class="tb-prologue">
-            <tr>
-              <td class="td-pro">P</td>
-              <td class="td-pro">r</td>
-              <td class="td-pro">o</td>
-              <td class="td-pro">l</td>
-            </tr>
-            <tr>
-              <td class="td-pro">o</td>
-              <td class="td-pro">g</td>
-              <td class="td-pro">u</td>
-              <td class="td-pro">e</td>
-            </tr>
-          </table>
-        </div>
-      </div>
+            <div class="panel" data-x-pos="0"  data-y-pos="1" style="display: flex;
+            justify-content: center;">
+                <!-- <span class="z-index-99 panel__nav panel__nav--left-top bg-menu js-zoom"><i class="fas fa-bars"></i></span> -->
+                <!-- <span class="panel__nav panel__nav--left js-left">left</span> -->
+                <!-- <span class="panel__nav panel__nav--right js-right">right</span> -->
+                <span class="panel__nav panel__nav--right-down js-down js-right">Porto</span>
+                <span class="panel__nav panel__nav--left-down js-down js-left">Exp</span>
+                <span class="panel__nav panel__nav--down js-down">Main</span>
+                <!--PROFILE===================-->
+                <div class="div-container bg-profile">
 
+                    <div class="div-title">
+                        <div><h2 style="font-size: 72px;">PROFILE</h2></div>
+                        <span class="js-zoom" style="font-size: 12px;margin-bottom: 20px;">View All</span>
+                        <div class="scroll-down"></div>
+                    </div>
+                    <div class="div-main__profile">
+                        <p style="font-weight: 600;letter-spacing: 1px;color: #fdc357;font-size: 35px;margin-bottom: 15px;">Irawan Dwihastomo</p>
+                        <p style="font-size: 12px;">Website Development | Project Management</p>
+                    </div>
+                    <div class="div-profile__word">
+                        <p class="profile__word" style="color:#fdc357;text-align: center;">&macr;</p>
+                        <p class="profile__word">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum consequuntur officiis, deleniti placeat provident consectetur culpa ratione, possimus quas modi tempora, pariatur sunt similique fuga minima unde rem doloribus at!
+                            <br><br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusamus sint cum, recusandae, nesciunt earum explicabo iusto consequatur velit maiores dolore inventore error, possimus architecto quaerat soluta repudiandae non quo!
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusamus sint cum, recusandae, nesciunt earum explicabo iusto consequatur velit maiores dolore inventore error, possimus architecto quaerat soluta repudiandae non quo!
+                        </p>
+                        <p class="profile__word" style="color:#fdc357;text-align: center;">&macr;</p>
+                    </div>
+                    <div class="profile__social_link">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <div class="col-xs-12 col-md-4 text-center flex-row__center social_hover" style="padding-left: 0;padding-right: 0;word-break: break-word">
+                                    <a href="https://id.linkedin.com/in/irawanwimo" target="_blank" style="display:flex;justify-content: center;color: white;text-decoration: none;padding: 0px 15px;">
+                                        <i class="fab fa-linkedin" style="font-size: 36px;color: white;"></i>
+                                        <p style="text-align: left;margin-left: 10px;font-size: 14px;text-transform: none;color:#fdc357;">https://id.linkedin.com/in/irawanwimo</p>
+                                    </a>
+                                </div>
+                                
+                                
+                                <div class="col-xs-12 col-md-4 text-center flex-row__center social_hover" style="padding-left: 0;padding-right: 0;word-break: break-word">
+                                    <a href="https://www.instagram.com/irawandw/" target="_blank" style="display:flex;justify-content: center;color: white;text-decoration: none;padding: 0px 15px;">
+                                        <i class="fab fa-instagram-square" style="font-size: 36px;"></i>
+                                        <p style="text-align: left;margin-left: 10px;font-size: 14px;text-transform: none;color:#fdc357;">https://www.instagram.com/irawandw/</p>
+                                    </a>
+                                </div>
+                                
+                                
+                                <div class="col-xs-12 col-md-4 text-center flex-row__center social_hover" style="padding-left: 0;padding-right: 0;word-break: break-word">
+                                    <a href="https://www.facebook.com/irawanwimo" target="_blank" style="display:flex;justify-content: center;color: white;text-decoration: none;padding: 0px 15px;">
+                                    <i class="fab fa-facebook-square" style="font-size: 36px;"></i>
+                                    <p style="text-align: left;margin-left: 10px;font-size: 14px;text-transform: none;color:#fdc357;">https://www.facebook.com/irawanwimo</p>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                          </div>
+                    </div>
 
-      <div class="procont">
-        <p class="prohead anim" id="prohead1">
-          <font id="prohide1">To</font> think <font id="prohide2">outside the box<br>you need</font> to understand the box
-        </p>
-        <p class="prohead2" id="prohead2" style="display: none;">
-           <font style="font-weight: 600;">Wimo box:</font><br>
-           The box is rotatable and will show you different informations<br>
-           As the box is rotating, it will show a clickable link to open up a page<br>
-           Each page will bring you to a different ambience of theme<br>
-          </p>
-        <div class="circle-wrapper circle" id="probtn">
-          <div class="circle pulse"></div>
-        </div>
-      </div>
+                </div>
 
-
-    </div>
-  </div>
-
-  <div class="wim-modal" id="prologuemodal2">
-      <div class="modal-content">
-
-        <div class="modalhead">
-          <div class="close-prologuemodal2 closemod anim clicksound">
-            <div class="outer">
-              <div class="inner">
-                <label>Back</label>
-              </div>
             </div>
-          </div>
 
-          <div class="anim" style="width: 100%;margin: auto;">
-            <table class="tb-prologue">
-              <tr>
-                <td class="td-pro">P</td>
-                <td class="td-pro">r</td>
-                <td class="td-pro">o</td>
-                <td class="td-pro">l</td>
-              </tr>
-              <tr>
-                <td class="td-pro">o</td>
-                <td class="td-pro">g</td>
-                <td class="td-pro">u</td>
-                <td class="td-pro">e</td>
-              </tr>
-            </table>
-          </div>
-        </div>
+            <!-- <div class="panel" data-x-pos="-1"  data-y-pos="1">
+                <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
+                <span class="panel__nav panel__nav--right js-right">right</span>
+                <span class="panel__nav panel__nav--down js-down">down</span>
+                <h1>Up Left</h1>
+            </div> -->
 
-        <div class="procont">
-          <p class="prohead anim" id="prohead3">
-            <font id="prohide3">To</font> think <font id="prohide4">outside the box<br>you need</font> to understand the box
-          </p>
-          <p class="prohead2" id="prohead4" style="display: none;">
-           <font style="font-weight: 600;">Wimo box:</font><br>
-           - The box is rotatable and will show you different informations<br>
-           - Just click and drag the way you want<br>
-           - if you're on mobile phone, there will be no sound<br>
-           - and if you're on android chrome, be careful you might reload the page
-          </p>
-          <div class="circle-wrapper circle" id="probtn2">
-            <div class="circle pulse"></div>
-          </div>
-        </div>
+            <!-- <div class="panel" data-x-pos="1"  data-y-pos="1">
+                <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
+                <span class="panel__nav panel__nav--left js-left">left</span>
+                <span class="panel__nav panel__nav--down js-down">down</span>
+                <h1>Up Right</h1>
+            </div> -->
 
-      </div>
-  </div>
+            <div class="panel" data-x-pos="-1"  data-y-pos="0" style="display: flex;
+            align-items: center;">
+                <!-- <span class="z-index-99 panel__nav panel__nav--left-top bg-menu js-zoom"><i class="fas fa-bars"></i></span> -->
+                <!-- <span class="panel__nav panel__nav--up js-up">up</span> -->
+                <span class="panel__nav panel__nav--right-top js-up js-right">Profile</span>
+                <span class="panel__nav panel__nav--right js-right">Main</span>
+                <span class="panel__nav panel__nav--right-down js-down js-right">Skills</span>
+                <!-- <span class="panel__nav panel__nav--down js-down">down</span> -->
+                <div class="div-container bg-exp">
 
-  <div class="wim-modal" id="profmodal">
-    <div class="modal-content">
+                    <div class="div-title">
+                        <div><h2 class="title-exp retro-fonts">Experiences</h2></div>
+                        <span class="js-zoom" style="font-size: 12px;margin-bottom: 20px;">View All</span>
+                        <div class="scroll-down"></div>
+                    </div>
 
-      <div class="modalhead">
-        <div class="close-profmodal closemod anim">
-          <div class="outer">
-            <div class="inner">
-              <label>Back</label>
+                    <div class="div-exp">
+                        <div class="div-exp-layer">
+                            <h3 class="sub-exp retro2-fonts">Present To Past</h3>
+
+                            <div class="container" style="padding-top: 30px;">
+                                <div class="row">
+                                    
+                                    <div class="col-xs-12 col-md-12 text-center div-content-exp">
+                                        <h3 class="timeline-date">November 2018 - September 2020</h3>
+                                        <h3 class="company-exp"><span class="red-retro">Futuready</span> Insurance Broker</h3>
+                                        <div class="role-exp"><h4>Back-End Developer</h4></div>
+                                        <p class="desc-exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptas ex neque incidunt tenetur accusamus suscipit enim assumenda voluptatum voluptate reprehenderit iure maxime, cum vitae vel magni, pariatur laboriosam necessitatibus.</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-12 text-center div-content-exp" style="padding-top: 70px;"></div>
+                                    <div class="col-xs-12 col-md-12 text-center div-content-exp">
+                                        <h3 class="timeline-date">November 2018 - September 2020</h3>
+                                        <h3 class="company-exp"><span class="no-transform red-retro">DynEd</span> International Inc.</h3>
+                                        <div class="role-exp"><h4>Back-End Developer</h4></div>
+                                        <p class="desc-exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptas ex neque incidunt tenetur accusamus suscipit enim assumenda voluptatum voluptate reprehenderit iure maxime, cum vitae vel magni, pariatur laboriosam necessitatibus.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="anim" style="width: 100%;margin: auto;">
-          <table class="tb-prologue">
-            <tr>
-              <td class="td-pro">P</td>
-              <td class="td-pro">r</td>
-              <td class="td-pro">o</td>
-              <td class="td-pro">f</td>
-            </tr>
-            <tr>
-              <td class="td-pro">i</td>
-              <td class="td-pro">l</td>
-              <td class="td-pro">e</td>
-              <td class="td-pro">s</td>
-            </tr>
-          </table>
-        </div>
-      </div>
+            <!-- <div class="panel" data-x-pos="-1"  data-y-pos="-1">
+                <span class="panel__nav panel__nav--up js-up">up</span>
+                <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
+                <span class="panel__nav panel__nav--right js-right">right</span>
+                <h1>Down Left</h1>
+            </div>
 
-      <div class="profabout">
-        <!-- <div class="wm_photo anim">
-          <img src="img/profile.jpg" />
-        </div>
-        <div class="wm_name anim">
-          <font>Irawan Dwihastomo</font>
-        </div> -->
-        <div class="row anim nomargin">
-          <div class="col-md-6 wm_photo"></div>
-          <div class="col-md-6" style="padding:20px">
-            <p class="wm_name">Irawan Dwihastomo</p>
-            <p class="wm_desc">
-              A highly motivated person Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
+            <div class="panel" data-x-pos="1"  data-y-pos="-1">
+                <span class="panel__nav panel__nav--up js-up">up</span>
+                <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
+                <span class="panel__nav panel__nav--left js-left">left</span>
+                <h1>Down Right</h1>
+            </div> -->
 
-      </div>
+            <div class="panel" data-x-pos="1"  data-y-pos="0">
+                <!-- <span class="z-index-99 panel__nav panel__nav--left-top bg-menu js-zoom"><i class="fas fa-bars"></i></span> -->
+                <!-- <span class="panel__nav panel__nav--up js-up">up</span> -->
+                <span class="panel__nav panel__nav--left-top js-up js-left">Profile</span>
+                <span class="panel__nav panel__nav--left js-left">Main</span>
+                <span class="panel__nav panel__nav--left-down js-down js-left">Skills</span>
+                <!-- <span class="panel__nav panel__nav--down js-down">down</span> -->
+                <h1>Right</h1>
+            </div>
 
+            <div class="panel" data-x-pos="0"  data-y-pos="-1">
+                <span class="panel__nav panel__nav--up js-up">Main</span>
+                <span class="panel__nav panel__nav--left-top js-up js-left">Exp</span>
+                <span class="panel__nav panel__nav--right-top js-up js-right">Porto</span>
+                <!-- <span class="panel__nav panel__nav--left js-left">left</span>
+                <span class="panel__nav panel__nav--right js-right">right</span>
+                <span class="panel__nav panel__nav--down js-down">down</span> -->
+                <h1>Down</h1>
+            </div>
+            
+            <!-- <div class="panel" data-x-pos="0"  data-y-pos="-2">
+                <span class="panel__nav panel__nav--up js-up">up</span>
+                <h1>Down 2</h1>
+            </div> -->
+        </div>
     </div>
-  </div>
 
-  <audio id="bgm" loop>
-    <source src="bensound-betterdays.mp3">
-  </audio>
-  <audio id="modalclick">
-    <source src="sound/Fuzzy Beep-SoundBible.com-1580329899.mp3">
-  </audio>
-
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/wimo.js"></script>
-  <script type="text/javascript" src="js/animatedModal.js"></script>
-  <script type="text/javascript" src="js/velocity.js"></script>
-  <script type="text/javascript" src="js/tweenmax.js"></script>
-  <script type="text/javascript" src="js/parallax.js"></script>
-  <script type="text/javascript" src="js/jquery.parallax.js"></script>
-
-  <script>
-    var bgm = document.getElementById("bgm");
-
-    // $(".clicksound").click(function(){
-    //   var click = document.getElementById("modalclick");
-    //   click.play();
-    // });
-    // $(document).ready(function() {
-    //   $('#modalclick').prop('volume', 0.30);
-    // })
-
-    $("#prologue").animatedModal({
-      modalTarget:'prologuemodal',
-      animatedIn: 'zoomIn',
-      animatedOut:'zoomOut',
-      color:'#000',
-
-      afterOpen: function() {
-        var children = $(".anim");
-        var index = 0;
-
-        function addClassNextChild() {
-            if (index == children.length) return;
-            children.eq(index++).show().velocity("transition.slideUpIn", { opacity:1, stagger: 250 });
-            window.setTimeout(addClassNextChild, 200);
-        }
-        addClassNextChild();
-
-      },
-      afterClose: function() {
-        proseq = 0;
-        $("#prohead2").hide();
-        $(".anim").hide();
-        $("#prohide1").removeClass("fade").css("opacity", 1);
-        $("#prohide2").removeClass("fade").css("opacity", 1);
-      }
-
-    });
-
-    $("#prologue2").animatedModal({
-      modalTarget:'prologuemodal2',
-      animatedIn: 'zoomIn',
-      animatedOut:'zoomOut',
-      color:'#000',
-
-      afterOpen: function() {
-        var children = $(".anim");
-        var index = 0;
-
-        function addClassNextChild() {
-            if (index == children.length) return;
-            children.eq(index++).show().velocity("transition.slideUpIn", { opacity:1, stagger: 250 });
-            window.setTimeout(addClassNextChild, 300);
-        }
-        addClassNextChild();
-
-      },
-      afterClose: function() {
-        proseq = 0;
-        $("#prohead4").hide();
-        $(".anim").hide();
-        $("#prohide3").removeClass("fade").css("opacity", 1);
-        $("#prohide4").removeClass("fade").css("opacity", 1);
-      }
-    });
-
-    $("#prof").animatedModal({
-      modalTarget:'profmodal',
-      animatedIn: 'zoomIn',
-      animatedOut:'zoomOut',
-      color:'#000',
-
-      // beforeOpen: function() {
-      //   $("#scene").hide();
-
-      // },
-      afterOpen: function() {
-        var children = $(".anim");
-        var index = 0;
-
-        function addClassNextChild() {
-            if (index == children.length) return;
-            children.eq(index++).show().velocity("transition.slideUpIn", { opacity:1, stagger: 250 });
-            window.setTimeout(addClassNextChild, 300);
-        }
-        addClassNextChild();
-
-      },
-      afterClose: function() {
-        $(".anim").hide();
-      }
-    });
-
-    var n = 0;
-
-    $("#prologue").click(function(){
-      // clickbtn();
-      $('#op6').hide();
-      n++;
-      // bgm.muted = true;
-    });
-
-    $("#prologue2").click(function(){
-      // clickbtn();
-      $('#op6').hide();
-      n++;
-      // bgm.muted = true;
-    });
-
-    $(".close-prologuemodal").click(function(){
-      if(n == 1){
-        op7();
-        // clickbtn();
-      }
-      // clickbtn();
-      // bgm.muted = false;
-    });
-
-    $(".close-prologuemodal2").click(function(){
-      if(n == 1){
-        op7();
-        // clickbtn();
-      }
-      // clickbtn();
-      // bgm.muted = false;
-    });
-
-  </script>
-
-  <script>
-  window.onload = function() {
-    TweenMax.from('.circle', 0.4, {
-      scale: 0,
-      transformOrigin: "center center",
-      ease: Power1.easeInOut,
-      onComplete: function() {
-        TweenMax.to('.pulse', 1, {
-          scale: 1.4,
-          transformOrigin: "center center",
-          opacity: 0,
-          repeat: -1,
-          delay: 0.5
-        });
-      }
-    });
-  };
-
-
-  </script>
-
+    <script src="jquery.min.js"></script>
+    <script src="wimo.js"></script>
+    <script src="fontawesome/js/fontawesome.js"></script>
+    
 </body>
+
 </html>
