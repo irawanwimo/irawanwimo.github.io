@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="wimo.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Fjalla+One|Passion+One|Courier+Prime:wght@700&display=swap|PT+Sans:700|Pacifico|Changa+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One|Fjalla+One|Passion+One|Courier+Prime:wght@700&display=swap' rel='stylesheet' type='text/css'>
 </head>
 <body class="max-height-100vh">
     <div class="site-wrap overflow-hidden">
@@ -133,14 +133,18 @@
                 <div class="div-container bg-exp">
 
                     <div class="div-title">
-                        <div><h2 class="title-exp retro-fonts">Experiences</h2></div>
-                        <span class="js-zoom" style="font-size: 12px;margin-bottom: 20px;">View All</span>
-                        <div class="scroll-down"></div>
+                        <!-- <div class="exp-layer"> -->
+                            <h3 class="line-1">the</h3>
+                            <div><h2 class="title-exp retro-fonts">Experiences</h2></div>
+                            <h3 class="sub-exp retro2-fonts">Present To Past</h3>
+                            <span class="retro-view" style="font-size: 12px;margin-bottom: 20px;">Scroll Down</span>
+                            <!-- <div class="scroll-down"></div> -->
+                        <!-- </div> -->
                     </div>
 
                     <div class="div-exp">
                         <div class="div-exp-layer">
-                            <h3 class="sub-exp retro2-fonts">Present To Past</h3>
+                            <!-- <h3 class="sub-exp retro2-fonts">Present To Past</h3> -->
 
                             <div class="container" style="padding-top: 30px;">
                                 <div class="row">
@@ -153,7 +157,7 @@
                                     </div>
                                     <div class="col-xs-12 col-md-12 text-center div-content-exp" style="padding-top: 70px;"></div>
                                     <div class="col-xs-12 col-md-12 text-center div-content-exp">
-                                        <h3 class="timeline-date">November 2018 - September 2020</h3>
+                                        <h3 class="timeline-date">January 2015 - October 2020</h3>
                                         <h3 class="company-exp"><span class="no-transform red-retro">DynEd</span> International Inc.</h3>
                                         <div class="role-exp"><h4>Back-End Developer</h4></div>
                                         <p class="desc-exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptas ex neque incidunt tenetur accusamus suscipit enim assumenda voluptatum voluptate reprehenderit iure maxime, cum vitae vel magni, pariatur laboriosam necessitatibus.</p>
@@ -210,7 +214,13 @@
 
     <script src="jquery.min.js"></script>
     <script src="wimo.js"></script>
+    <script src="archtext.js"></script>
     <script src="fontawesome/js/fontawesome.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".title-exp").arctext({radius: 500});
+        });
+    </script>
     
 </body>
 

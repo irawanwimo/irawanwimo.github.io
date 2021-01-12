@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'retro';
   src: url('fonts/Monoton-Regular.ttf');
@@ -10,11 +14,11 @@
 }
 
 .retro-fonts{
-  font-family: 'retro';
+  font-family: 'Changa One';
 }
 
 .retro2-fonts{
-  font-family: 'retro2';
+  font-family: 'PT Sans';
 }
 
 body {
@@ -411,22 +415,68 @@ body {
 }
 
 .bg-exp{
-  background:#293462;
+  /* background:#293462; */
+  background: #4c0f0f url(bg/groovepaper.png);
 }
 
 .title-exp{
   font-size: 72px;
   word-break: break-word;
   color: #f76262;
-  border-bottom: solid 2px;
-  border-top: solid 2px;
+  /* color: #3c3c3c; */
+  /* color: #f9e2c4; */
+  /* border-bottom: solid 2px;
+  border-top: solid 2px; */
   padding: 20px;
+  padding-top: 0px;
+
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 0 #3c3c3c, -1px -1px 0 #3c3c3c, 1px -1px 0 #3c3c3c, -1px 1px 0 #3c3c3c, 1px 1px 0 #3c3c3c;
+}
+
+.retro-view{
+  font-family: "Pacifico", cursive;
+  text-transform: none;
+  color: #7b7b7b;
+}
+/* .retro-view:hover{
+  cursor: pointer;
+  color: #b30d0d;
+} */
+
+.line-1 {
+  position: relative;
+  font-family: "Pacifico", cursive;
+  text-transform: none;
+  color: #3c3c3c;
+}
+.line-1:before, .line-1:after {
+  font-family: FontAwesome;
+  /* content: '\f005'; */
+  content: "-";
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 16px;
+  margin: 0 30px;
+  top: -5px;
 }
 
 .div-exp{
+  border-top: solid 8px #3c3c3c;
   background: url("bg/bg_rust.jpg") #e5d8c7;
   /* background: #4c0f0f url(bg/groovepaper.png); */
   position: relative;
+}
+
+.exp-layer {
+  /* background-color: #ffecab52; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
 }
 
 .div-exp-layer {
@@ -439,15 +489,14 @@ body {
 }
 
 .sub-exp{
-  background: #4c0f0f url(bg/groovepaper.png);
   text-align: center;
-  text-transform: capitalize;
-  color: #585858;
+  text-transform: uppercase;
+  color: #3c3c3c;
   margin-bottom: 0px;
   padding: 32px 0px;
-  letter-spacing: 0;
-  border-top: solid 5px #2f2f2f;
-  border-bottom: solid 5px #2f2f2f;
+  font-size: 14px;
+  letter-spacing: 12px;
+  position: relative;
 }
 
 .sub-exp:before, .sub-exp:after {
@@ -459,10 +508,10 @@ body {
   border-bottom: 1px solid #585858;
 }
 .sub-exp:before {
-  margin: 15px 0 0 -60px;
+  margin: 5px 0 0 -60px;
 }
 .sub-exp:after {
-  margin: 15px 0 0 10px;
+  margin: 5px 0 0 10px;
 }
 
 .div-content-exp{
@@ -508,7 +557,7 @@ body {
 .role-exp{
   /* background: #4c0f0f url(bg/groovepaper.png); */
   font-family: "Passion One";
-  text-shadow: 1px 1px #d8d2c1, 2px 2px #af9284;
+  text-shadow: 1px 1px #d8d2c16b, 2px 2px #af928487;
   /* font-family: 'Courier Prime', monospace; */
   /* letter-spacing: 1px; */
   padding: 3px 10px;
@@ -530,14 +579,15 @@ body {
 }
 
 .desc-exp{
-  background: #4c0f0f url(bg/groovepaper.png);
+  /* background: #4c0f0f url(bg/groovepaper.png); */
+  /* background: #efe8d8; */
   font-family: 'Courier Prime', monospace;
   text-align: left;
   text-transform: none;
   letter-spacing: 0px;
   border: solid 1px #525d6247;
   margin-left: 25px;
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 20px;
   color: #40484c;
   line-height: 35px;
@@ -567,6 +617,7 @@ body {
 }
 
 .div-title{
+  background: #ffb94b4f;
   height: 100%;
   width: 100%;
   display: flex;
@@ -648,4 +699,25 @@ body {
   0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
   50%  { opacity: 1;  }
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .title-exp {
+    font-size: 42px;
+  }
+
+  .company-exp {
+    font-size: 34px;
+  } 
+
+  .sub-exp {
+    text-align: center;
+    text-transform: uppercase;
+    color: #3c3c3c;
+    margin-bottom: 0px;
+    padding: 32px 0px;
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
 }
