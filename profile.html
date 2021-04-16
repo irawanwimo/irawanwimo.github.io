@@ -56,6 +56,13 @@
                 </div>
 
                 
+                <!-- <div class="text-center ">
+                  <button class="kave-btn" data-toggle="modal" data-target="#prologue">
+                    <span class="kave-line"></span>
+                    Prologue
+                  </button>
+                </div> -->
+
                 <div class="text-center ">
                   <button class="kave-btn" data-toggle="modal" data-target="#prologue">
                     <span class="kave-line"></span>
@@ -185,10 +192,7 @@
       <div class="modal-dialog" role="document" style="height: 100vh;">
         <div class="modal-content" style="height: 100vh;">
           <div class="modal-header profiles-header">
-            <div class="container">
-              <div class="row"><h2 class="text-white" style="font-family: 'Titillium Web', sans-serif;letter-spacing: 3px;">//illunoir.</h2></div>
-            </div>
-            
+            <h5 class="modal-title" id="profilesLabel">Profiles</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -197,28 +201,24 @@
 
             <div class="container mt-5" style="max-width: none;">
               <div class="row">
-                <div class="col-md-6">
-                  <img src="assets/img/profile.jpeg" alt="" style="max-width: 100%;">
+                <div class="col-4">
+                  <img src="" alt="">
                 </div>
-                <div class="col-md-6 profiles-desc">
-                  <h3 class="text-white" style="font-size: 5.75rem;">Me In a Nutshell</h3>
+                <div class="col-8 profiles-desc">
                   I’m highly motivated to learn new things. And always trying to figure out any  possible ways to solve a case. I like to try to do the things those I never knew I could. As I believe that nothing is impossible, there's only hard.
                 </div>
               </div>
             </div>
-            
-            <hr style="border-top: solid 1px #5f6368;margin-top:60px">
 
             <div class="container margin-t-70" style="max-width: none;">
               <div class="row">
                   <div class="col-md-4 mb-3">
                       <div class="card profiles-card" style="width: 100%;min-height: 250px;">
                           <div class="card-body">
-                              <!-- <div class="profiles-divider"></div> -->
                               <h5 class="card-title">Interests</h5>
                               <h6 class="card-subtitle mb-2 text-muted">Oh, other planets!</h6>
                               <p class="card-text">Other than programming world, I also spent my times to explore these other expertises:</p>
-                              <ul class="ul-profiles">
+                              <ul>
                                 <li>Photography</li>
                                 <li>Videography</li>
                                 <li>Designing</li>
@@ -229,11 +229,10 @@
                   <div class="col-md-4 mb-3">
                       <div class="card profiles-card" style="width: 100%;min-height: 250px;">
                           <div class="card-body">
-                              <!-- <div class="profiles-divider"></div> -->
                               <h5 class="card-title">Social Medias</h5>
                               <h6 class="card-subtitle mb-2 text-muted">Where alter egos lies</h6>
                               <p class="card-text">See you in the virtual world and share your thoughts.</p>
-                              <ul class="ul-profiles">
+                              <ul>
                                 <li><a href="#" class="card-link">LinkedIn</a></li>
                                 <li><a href="#" class="card-link">Instagram</a></li>
                                 <li><a href="#" class="card-link">Facebook</a></li>
@@ -244,14 +243,11 @@
                   <div class="col-md-4 mb-3">
                       <div class="card profiles-card" style="width: 100%;min-height: 250px;">
                           <div class="card-body">
-                              <!-- <div class="profiles-divider"></div> -->
                               <h5 class="card-title">Contact</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Communications. Matters.</h6>
-                              <p class="card-text">The number is available for either Whatsapp and phone calls. And I turn on notifications on my email.</p>
-                              <ul class="ul-profiles">
-                                <li><a href="#" class="card-link">082211447414</a></li>
-                                <li><a href="#" class="card-link">irawandwihastomo@ymail.com</a></li>
-                              </ul>
+                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="card-link">Card link</a>
+                              <a href="#" class="card-link">Another link</a>
                           </div>
                       </div>
                   </div>
@@ -290,10 +286,5 @@
     <script src="assets/js/wimo.js"></script>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-    <script>
-      if (window.location.hash == "#profiles") {
-          $('#profiles').modal('show');
-      }
-    </script>
 </body>
 </html>
