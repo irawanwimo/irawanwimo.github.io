@@ -21,6 +21,10 @@ body{
     height: 500px !important;
 }
 
+.max-h-400 {
+  height: 400px !important;
+}
+
 .margin-t-70{
     margin-top: 70px;
 }
