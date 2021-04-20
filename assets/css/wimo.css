@@ -2,6 +2,10 @@ body{
     background: #191919;
 }
 
+.font-title{
+  font-family: 'Archivo Black', sans-serif !important;
+}
+
 .text-w{
     color: #fff !important;
 }
@@ -287,6 +291,7 @@ body{
 }
 .card-text{
   color: #e8eaed !important;
+  margin-top: 25px !important;
 }
 .ul-profiles{
   color: #e8eaed !important;
