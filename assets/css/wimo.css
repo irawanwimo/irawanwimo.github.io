@@ -17,6 +17,10 @@ body{
   font-style: italic;
 }
 
+.body_mobile{
+  margin-top: 70px;
+}
+
 .center-vh-flex{
     display: flex;
     flex-direction: column;
