@@ -16,329 +16,64 @@
 
     <script src="assets/js/jquery-3.6.js"></script>
     
-    <title>Wimo Box</title>
+    <title>Illunoir</title>
 </head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-white" style="font-family: 'Titillium Web', sans-serif;margin-top: 20px;letter-spacing: 3px;">//illunoir.</h2>
-            </div>
-        </div>
-    </div>
 
-    <div class="container cont-box">
-        <div class="row">
-            <div class="col-md-12">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 center-vh-flex">
 
-                <!-- <p class="text-center text-white">Click On Prologue</p> -->
-
-                <div class="center-v boxarea">
-                    <div class="cube">
-                        <div class="side">
-                          <div class="cube-image">Credits</div>
-                        </div>
-                        <div class="side">
-                          <div class="cube-image">Skills</div>
-                        </div>
-                        <div class="side">
-                          <div class="cube-image">Experiences</div>
-                        </div>
-                        <div class="side">
-                          <div class="cube-image">Profiles</div>
-                        </div>
-                        <div class="side">
-                          <div class="cube-image">Projects</div>
-                        </div>
-                        <div class="side">
-                          <div class="cube-image active">Multiverse Cube</div>
-                        </div>
-                    </div>
+            <div class="scene">
+                <div class="cube">
+                    <div class="cube__face cube__face--front">front</div>
+                    <div class="cube__face cube__face--back">back</div>
+                    <div class="cube__face cube__face--right">right</div>
+                    <div class="cube__face cube__face--left">left</div>
+                    <div class="cube__face cube__face--top">top</div>
+                    <div class="cube__face cube__face--bottom">bottom</div>
                 </div>
-
-                
-                <div class="text-center ">
-                  <button class="kave-btn" data-toggle="modal" data-target="#prologue">
-                    <span class="kave-line"></span>
-                    Prologue
-                  </button>
-                </div>
-                
             </div>
+            <a id="testclick">Test</a>
         </div>
     </div>
-    
-    <!-- PROLOGUE -->
-    <div class="modal fade" id="prologue" tabindex="-1" role="dialog" aria-labelledby="prologueLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content" style="height: 100vh;">
-          <div class="modal-body bg-prologue">
-            <div class="container modal-container">
-              <div class="row">
+</div>
 
-                <div class="col-md-12 prologue-title">
-                  <h1 class="text-w">Prologue</h1>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="col-md-12 prologue-desc-col">
-                  <div class="slider">
-                    <ul class="ul-first">
-                        <li class="center-vh-flex">
-                          <div style="padding-left: 15px;border-left: solid 3px #fff;">
-                            <a class="prologue-desc">Before you <font class="text-w">think</font> outside of it.<br>You need <font class="text-w">to understand</font> wholly <font class="text-w">the box</font> in the first place.</a>
-                          </div>
-                          
-                        </li>
-                        <li class="center-vh-flex" style="width: 85%;">
-                          <div class="second-slide">
-                            <ul class="ul-second">
-                              <li>Each side of box will tell you a different story, with a different style</li>
-                              <li>You can rotate the box by tap/click and drag around</li>
-                            </ul>
-                          </div>
-                        </li>
-                    </ul>
-                    <ol>
-                        <li class="active"></li>
-                        <li></li>
-                    </ol>
-                  </div>
-                </div>
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- PROLOGUE -->
+<p class="radio-group">
+    <label>
+        <input type="radio" name="rotate-cube-side" value="front" checked /> front
+    </label>
+    <label>
+        <input type="radio" name="rotate-cube-side" value="right" /> right
+    </label>
+    <label>
+        <input type="radio" name="rotate-cube-side" value="back" /> back
+    </label>
+    <label>
+        <input type="radio" name="rotate-cube-side" value="left" /> left
+    </label>
+    <label>
+        <input type="radio" name="rotate-cube-side" value="top" /> top
+    </label>
+    <label>
+        <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+    </label>
+</p>
+  
 
-    <!-- CREDITS -->
-    <div class="modal fade" id="credits" tabindex="-1" role="dialog" aria-labelledby="creditsLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document" style="height: 100vh;">
-        <div class="modal-content" style="height: 100vh;">
-          <div class="modal-header">
-            <h5 class="modal-title" id="creditsLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- CREDITS -->
+<script src="assets/js/wimo-box.js"></script>
+<script src="assets/js/wimo.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
 
-    <!-- SKILLS -->
-    <div class="modal fade" id="skills" tabindex="-1" role="dialog" aria-labelledby="skillsLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document" style="height: 100vh;">
-        <div class="modal-content" style="height: 100vh;">
-          <div class="modal-header">
-            <h5 class="modal-title" id="skillsLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- SKILLS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- EXPER -->
-    <div class="modal fade" id="exper" tabindex="-1" role="dialog" aria-labelledby="experLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document" style="height: 100vh;">
-        <div class="modal-content" style="height: 100vh;">
-          <div class="modal-header">
-            <h5 class="modal-title" id="experLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- EXPER -->
+<script>
+    document.getElementById('testclick').addEventListener('click', function() {
 
-    <!-- PROFILES -->
-    <div class="modal fade" id="profiles" tabindex="-1" role="dialog" aria-labelledby="profilesLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header profiles-header">
-            <div class="container">
-              <div class="row"><h2 class="text-white" style="font-family: 'Titillium Web', sans-serif;letter-spacing: 3px;">//illunoir.</h2></div>
-            </div>
-            
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body body-profiles">
+        TweenMax.to('.scene', 1.5, {opacity: 0, ease: Circ.easeOut });
 
-            <div class="container mt-5" style="max-width: none;">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="assets/img/profile.jpeg" alt="" style="max-width: 100%;">
-                </div>
-                <div class="col-md-6 profiles-desc">
-                  <h3 class="text-white font-title" style="font-size: 5.75rem;word-break: break-word;">Me In a Nutshell</h3>
-                  I’m highly motivated to learn new things. And always trying to figure out any  possible ways to solve a case. I like to try to do the things those I never knew I could. As I believe that nothing is impossible, there's only hard.
-                </div>
-              </div>
-            </div>
-            
-            <hr style="border-top: solid 1px #5f6368;margin-top:60px">
-
-            
-            
-            <div class="container">
-              
-              <div class="timeline">
-                <h2>2016</h2>
-                
-                <ul>
-                  <li>
-                    <h5>January</h5>
-                    <h5 class="text-bold">DynEd International, Inc.</h5>
-                    <p class="text-italic">Backend Developer</p>
-                    <p>One day, my boss came up to me and asked, "Are you ready, Joe?" Pretty much decided I wasn't ready.</p>
-                    <time>August 2013</time>
-                  </li>
-                  <li>
-                    <h5>February</h5>
-                    <h5 class="text-bold">DynEd International, Inc.</h5>
-                    <p class="text-italic">Project Manager</p>
-                    <p>One day, my boss came up to me and asked, "Are you ready, Joe?" Pretty much decided I wasn't ready.</p>
-                    <time>August 2013</time>
-                  </li>
-                </ul>
-                
-                <h2>2012</h2>
-                <ul>
-                  <li>
-                    <h3>Graduated College</h3>
-                    <p>It only took, like, two years.</p>
-                    <time>December 2012</time>
-                  </li>
-                  <li>
-                    <h3>Graduated Community College</h3>
-                    <p>Studying Aerospace Engineering.</p>
-                    <time>May 2012</time>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <hr style="border-top: solid 1px #5f6368;margin-top:60px">
-
-            <div class="container margin-t-70" style="max-width: none;">
-              <div class="row">
-                  <div class="col-md-4 mb-3">
-                      <div class="card profiles-card" style="width: 100%;min-height: 250px;">
-                          <div class="card-body">
-                              <!-- <div class="profiles-divider"></div> -->
-                              <h5 class="card-title font-title">Interests</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Oh, other planets!</h6>
-                              <p class="card-text">Other than programming world, I also spent my times to explore these other expertises:</p>
-                              <ul class="ul-profiles">
-                                <li><a href="#" class="card-link">Photography</a></li>
-                                <li><a href="#" class="card-link">Videography</a></li>
-                                <li><a href="#" class="card-link">Designing</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                      <div class="card profiles-card" style="width: 100%;min-height: 250px;">
-                          <div class="card-body">
-                              <!-- <div class="profiles-divider"></div> -->
-                              <h5 class="card-title font-title">Social Medias</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Where alter egos lies</h6>
-                              <p class="card-text">See you in the virtual world and share your thoughts.</p>
-                              <ul class="ul-profiles">
-                                <li><a href="#" class="card-link">LinkedIn</a></li>
-                                <li><a href="#" class="card-link">Instagram</a></li>
-                                <li><a href="#" class="card-link">Facebook</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                      <div class="card profiles-card" style="width: 100%;min-height: 250px;">
-                          <div class="card-body">
-                              <!-- <div class="profiles-divider"></div> -->
-                              <h5 class="card-title font-title">Contact</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Communications. Matters.</h6>
-                              <p class="card-text">The number is available for either Whatsapp and phone calls. And I turn on notifications on my email.</p>
-                              <ul class="ul-profiles">
-                                <li><a href="#" class="card-link">082211447414</a></li>
-                                <li><a href="#" class="card-link">irawandwihastomo@ymail.com</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-            <hr style="border-top: solid 1px #5f6368;margin-top:20px">
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- PROFILES -->
-
-    <!-- HOBBIES -->
-    <div class="modal fade" id="hobbies" tabindex="-1" role="dialog" aria-labelledby="hobbiesLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document" style="height: 100vh;">
-        <div class="modal-content" style="height: 100vh;">
-          <div class="modal-header">
-            <h5 class="modal-title" id="hobbiesLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- HOBBIES -->
-
-    <script src="assets/js/wimo-box.js"></script>
-    <script src="assets/js/wimo.js"></script>
-    <script src="assets/js/modal.js"></script>
-    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-    <script>
-      if (window.location.hash == "#profiles") {
-          $('#profiles').modal('show');
-      }
-    </script>
+    })
+</script>
 </body>
 </html>
