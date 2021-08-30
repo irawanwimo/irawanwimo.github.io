@@ -34,6 +34,7 @@
     margin: 0 auto;
     height: 200px;
     width: 200px;
+    z-index: 1000;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
