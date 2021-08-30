@@ -10,6 +10,13 @@ body{
     color: #fff !important;
 }
 
+.text-bold{
+  font-weight: 600;
+}
+.text-italic{
+  font-style: italic;
+}
+
 .center-vh-flex{
     display: flex;
     flex-direction: column;
@@ -253,13 +260,13 @@ body{
 }
 
 .body-profiles{
-  background: #202124;
+  background: #1d1f21;
   overflow: auto;
 }
 
 .profiles-header{
   border-bottom: 1px solid #5f6368 !important;
-  background: #202124;
+  background: #1d1f21;
   border-radius: 0px !important;
 }
 
@@ -311,4 +318,98 @@ body{
 }
 .card-link:hover{
   text-decoration: underline !important;
+}
+
+
+
+
+
+.timeline {
+  position: relative;
+  overflow: auto;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background: #efefef;
+  left: 0;
+}
+.timeline h2 {
+  background: #1e2022;
+  max-width: 6em;
+  margin: 0 auto 1em;
+  padding: 5px 20px;
+  text-align: center;
+  position: relative;
+  clear: both;
+  border: solid 1px;
+  color: #efefef;
+}
+.timeline ul {
+  list-style: none;
+  padding: 0 0 0 1em;
+  z-index: 1;
+}
+.timeline li {
+  background: #1e2022;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  color: #fefefe;
+  border: solid 1px #5f6367;
+}
+.timeline li:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 1em solid #5f6367;
+  border-left: 1em solid transparent;
+  position: absolute;
+  left: -1em;
+  top: -1px;
+}
+.timeline h3 {
+  margin-top: 0;
+}
+.timeline time {
+  font-style: italic;
+}
+
+@media screen and (min-width: 40em) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .timeline:before {
+    left: 50%;
+  }
+  .timeline ul {
+    padding-left: 0;
+    /* max-width: 700px; */
+    margin: 0 auto;
+  }
+  .timeline li {
+    width: 100%;
+  }
+  .timeline li:nth-child(even) {
+    float: right;
+    margin-top: 2em;
+  }
+  .timeline li:nth-child(odd) {
+    float: left;
+  }
+  .timeline li:nth-child(odd):before {
+    border-top: 1em solid #5f6367;
+    border-right: 1em solid transparent;
+    border-left: none;
+    right: -1em;
+    left: auto;
+    top: -1px;
+  }
+  .timeline li:nth-of-type(2n+1) {
+    clear: both;
+  }
 }

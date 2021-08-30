@@ -16,3 +16,4 @@ $(".slider ol li").on("click", function() {
         top: -$(".slider").height() * $(this).index()
     }, 500);
 });
+
