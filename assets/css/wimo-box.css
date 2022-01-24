@@ -3,10 +3,11 @@
 body { font-family: sans-serif; }
 
 .scene {
-  width: 202px;
-  height: 202px;
-  border: 1px solid #737373;
-  margin: 80px;
+  padding: 15px;
+  width: 232px;
+  height: 232px;
+  /* border: 1px solid #737373; */
+  margin: 35px;
   perspective: 400px;
 }
 
@@ -27,6 +28,8 @@ body { font-family: sans-serif; }
 .cube.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
 
 .cube__face {
+  background: #080808;
+  border: 1px solid #737373;
   position: absolute;
   width: 200px;
   height: 200px;
@@ -34,33 +37,39 @@ body { font-family: sans-serif; }
   line-height: 200px;
   font-size: 40px;
   font-weight: bold;
-  color: white;
+  /* color: white; */
   text-align: center;
 }
 
 .cube__face--front  { 
-  background: linear-gradient(to right, #1d1e21, #080808);
-  background: -webkit-linear-gradient(to right, #1d1e21, #080808);
+  /* background: linear-gradient(to right, #1d1e21, #080808);
+  background: -webkit-linear-gradient(to right, #1d1e21, #080808); */
+  background: #080808;
  }
 .cube__face--right  { 
-  background: linear-gradient(to right, #1d1e21, #080808);
-  background: -webkit-linear-gradient(to right, #1d1e21, #080808);
+  /* background: linear-gradient(to right, #1d1e21, #080808);
+  background: -webkit-linear-gradient(to right, #1d1e21, #080808); */
+  background: #080808;
  }
 .cube__face--back   { 
-  background: linear-gradient(to right, #1d1e21, #080808);
-  background: -webkit-linear-gradient(to right, #1d1e21, #080808);
+  /* background: linear-gradient(to right, #1d1e21, #080808);
+  background: -webkit-linear-gradient(to right, #1d1e21, #080808); */
+  background: #080808;
  }
 .cube__face--left   { 
-  background: linear-gradient(to right, #1d1e21, #080808);
-  background: -webkit-linear-gradient(to right, #1d1e21, #080808);
+  /* background: linear-gradient(to right, #1d1e21, #080808);
+  background: -webkit-linear-gradient(to right, #1d1e21, #080808); */
+  background: #080808;
  }
 .cube__face--top    { 
-  background: linear-gradient(to right, #1d1e21, #080808);
-  background: -webkit-linear-gradient(to right, #1d1e21, #080808);
+  /* background: linear-gradient(to right, #1d1e21, #080808);
+  background: -webkit-linear-gradient(to right, #1d1e21, #080808); */
+  background: #080808;
  }
 .cube__face--bottom { 
-  background: linear-gradient(to right, #1d1e21, #080808);
-  background: -webkit-linear-gradient(to right, #1d1e21, #080808);
+  /* background: linear-gradient(to right, #1d1e21, #080808);
+  background: -webkit-linear-gradient(to right, #1d1e21, #080808); */
+  background: #080808;
  }
 
 .cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }

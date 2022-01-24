@@ -46,374 +46,144 @@ body{
     flex-direction: column;
 }
 
-.box-link{
-    padding: 7px 10px;
-    letter-spacing: 2px;
-    width: 140px;
-    text-align: center;
-    margin: 0 auto;
-    border: solid 1px #676767;
-    color: #e4e4e4;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-.box-link:hover{
 
-}
-
-
-.kave-btn {
-    position: relative;
-    /* border: solid 1px rgba(0, 214, 252, 0.3);
-    background: none;
-    color: rgba(0, 214, 252, 0.5); */
-    border: solid 1px rgb(255 255 255 / 12%);
-    background: none;
-    color: rgb(183 183 183);
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: 1.8px;
-    width: 200px;
-    height: 50px;
-    padding: 0;
-    transition: all 0.25s ease;
-    outline: none;
-    font-size: 14px;
-  }
-  .kave-btn:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 60px;
-    height: 1px;
-    transform: translateY(-1px);
-    /* background: #00d6fc; */
-    background: #929292;
-    transition: all 0.25s ease;
-  }
-  .kave-btn:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-    width: 60px;
-    height: 1px;
-    transform: translateY(1px);
-    background: #929292;
-    transition: all 0.25s ease;
-  }
-  .kave-btn:hover {
-    background: #131313;
-    cursor: pointer;
-    box-shadow: 1px 1px 8px rgb(255 255 255 / 30%);
-    color: #fff;
-    text-shadow: 0 0 8px rgb(0 214 252 / 40%);
-    border-color: transparent;
-  }
-  .kave-btn:hover.kave-btn:before {
-    left: 0;
-    width: 20px;
-  }
-  .kave-btn:hover.kave-btn:after {
-    right: 0;
-    width: 20px;
-  }
-  .kave-btn:hover .kave-line:before {
-    bottom: 0;
-  }
-  .kave-btn:hover .kave-line:after {
-    top: 0;
-  }
-  .kave-line:before {
-    content: "";
-    position: absolute;
-    bottom: 30%;
-    right: 0;
-    width: 1px;
-    height: 20px;
-    transform: translateX(1px);
-    background: #929292;
-    transition: all 0.25s ease;
-  }
-  .kave-line:after {
-    content: "";
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 1px;
-    height: 20px;
-    transform: translateX(-1px);
-    background: #929292;
-    transition: all 0.25s ease;
-  }
-  .kave-btn:active, .kave-btn:focus {
-    outline: none;
-  }
-  
-
-  .modal.fade{
-    opacity:1;
-  }
-  .modal.fade .modal-dialog {
-     -webkit-transform: translate(0);
-     -moz-transform: translate(0);
-     transform: translate(0);
-  }
-
-.modal-container{
-    margin: 0 auto;
-    max-width: 100% !important;
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    padding: 0;
-    margin: 0;
-}
-
-.slider {
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    -webkit-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -o-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    overflow: hidden;
-    position: relative;
-    border-radius: 15px;
-}
-.ul-first{
-    width: 90% !important;
-}
-.ul-first, .ul-first li {width: 100%; height: 100%}
-.ul-first {
-    position: absolute;
-    top: 0;
-    left: 0
-}
-.ul-first li {
-    /* text-align: center; */
-    /* line-height: 400px; */
-    font-size: 50px;
-    color: #aaa
-}
-.ul-second li {
-    /* text-align: center; */
-    /* line-height: 400px; */
-    font-size: 22px;
-    color: #fafafa;
-    margin: 25px 0px 25px 30px;
-}
-/* .slider ul li:first-of-type {background: #222}
-.slider ul li:nth-of-type(2) {background: #252525}
-.slider ul li:nth-of-type(3) {background: #222}
-.slider ul li:nth-of-type(4) {background: #252525}
-.slider ul li:last-of-type {background: #222} */
-.slider ol {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    padding-right: 15px;
-    -webkit-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -o-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-}
-.slider ol li {
-    width: 25px;
-    height: 25px;
-    margin-bottom: 50px;
-    /* background: rgba(255, 255, 255,.3); */
-    border: solid 1px #fafafa;
-    cursor: pointer;
-    border-radius: 50%;
-    list-style-type: none;
-}
-.slider ol li:hover, .slider ol li.active {
-    background: #eee;
-    box-shadow: 0px 0px 7px 0px rgba(255,255,255,0.75);
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(255,255,255,0.75);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(255,255,255,0.75);
-}
-
-.bg-prologue{
-    background-color: #202124;
-    /* background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%); */
-}
-.prologue-title{
-    display: flex;
-    justify-content: space-between;
-}
-.prologue-desc-col{
-    display: flex;
-    margin-top: 50px;
-}
-.prologue-desc{
-    margin: 0 auto;
-    font-size: 36px;
-    color: #fafafa;
-}
-
-.body-profiles{
-  background: #1d1f21;
-  overflow: auto;
-}
-
-.profiles-header{
-  border-bottom: 1px solid #5f6368 !important;
-  background: #1d1f21;
-  border-radius: 0px !important;
-}
-
-.profiles-desc{
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0.5px;
-  color: #e8eaed;
-  /* background: #222222; */
-  padding: 20px;
-  border: 1px solid #202225;
-  /* box-shadow: 3px 4px 14px 0px rgb(153 61 174 / 30%);
-  -webkit-box-shadow: 3px 4px 14px 0px rgb(153 61 174 / 30%);
-  -moz-box-shadow: 3px 4px 14px 0px rgb(153 61 174 / 30%); */
-}
-
-.profiles-card{
-  border: none !important;
-  border-radius: 10px !important;
-  background-color: #202124 !important;
-  /* background-image: linear-gradient(319deg, #1d1d1d 0%, #252525 94%); */
-}
-
-.profiles-divider{
-  width: 70px;
-  border-top: solid 2px #fff;
-  margin-bottom: 10px;
-}
-.card-title{
-  color: #ffffff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.card-text{
-  color: #e8eaed !important;
-  margin-top: 25px !important;
-}
-.ul-profiles{
-  color: #e8eaed !important;
-  list-style-type: none;
-}
-.ul-profiles > li{
-  margin-bottom: 5px;
-}
-.card-link{
-  color: #8ab4f8 !important;
-  text-decoration: none;
-  outline: 0;
-}
-.card-link:hover{
-  text-decoration: underline !important;
-}
-
-
-
-
-
-.timeline {
-  position: relative;
-  overflow: auto;
-}
-.timeline:before {
-  content: '';
+.bg-sq-spinning{
   position: absolute;
-  height: 100%;
-  width: 2px;
-  background: #efefef;
-  left: 0;
 }
-.timeline h2 {
-  background: #1e2022;
-  max-width: 6em;
-  margin: 0 auto 1em;
-  padding: 5px 20px;
-  text-align: center;
+
+.square {
+  width: 22vw;
+  height: 22vw;
+  border: 1px solid #303030;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 90000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animaton-duration: 90000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 90000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+input {
+  display: none;
+}
+
+
+/*
+ * Then, style the label so it looks like however you want.
+ * Here's a quick rundown of how I did it here:
+ */
+
+
+/*
+ * Some basic positioning styles, and we give it the pointer cursor to show 
+ * that it's clickable
+ */
+
+label {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+/*
+ * With how I decided to build this, the position: relative is super important.
+ * We're going to position a pseudo element within this element(As it is the containing box)
+ */
+
+label span {
+  color: #e5e5e5;
   position: relative;
-  clear: both;
-  border: solid 1px;
-  color: #efefef;
+  line-height: 22px;
 }
-.timeline ul {
-  list-style: none;
-  padding: 0 0 0 1em;
-  z-index: 1;
-}
-.timeline li {
-  background: #1e2022;
-  padding: 1em;
-  margin-bottom: 1em;
-  position: relative;
-  color: #fefefe;
-  border: solid 1px #5f6367;
-}
-.timeline li:before {
+
+
+/* 
+ * Because we're using pseudo elements, a content property is required to make them appear.
+ */
+
+label span:before,
+label span:after {
   content: '';
-  width: 0;
-  height: 0;
-  border-top: 1em solid #5f6367;
-  border-left: 1em solid transparent;
+}
+
+
+/*
+ * We are using the :before peudo elemnt as the actual button,
+ * then we'll position the :after over it. You could also use a background-image,
+ * font-icon, or really anything if you want different styles.
+ * For the specific style we're going for, this approach is simply the easiest, but
+ * once you understand the concept you can really do it however you like.
+ */
+
+label span:before {
+  border: 1px solid #222021;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+label span:after {
+  background: #e5e5e5;
+  width: 14px;
+  height: 14px;
   position: absolute;
-  left: -1em;
-  top: -1px;
-}
-.timeline h3 {
-  margin-top: 0;
-}
-.timeline time {
-  font-style: italic;
+  top: 2px;
+  left: 4px;
+  transition: 300ms;
+  opacity: 0;
 }
 
-@media screen and (min-width: 40em) {
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .timeline:before {
-    left: 50%;
-  }
-  .timeline ul {
-    padding-left: 0;
-    /* max-width: 700px; */
-    margin: 0 auto;
-  }
-  .timeline li {
-    width: 100%;
-  }
-  .timeline li:nth-child(even) {
-    float: right;
-    margin-top: 2em;
-  }
-  .timeline li:nth-child(odd) {
-    float: left;
-  }
-  .timeline li:nth-child(odd):before {
-    border-top: 1em solid #5f6367;
-    border-right: 1em solid transparent;
-    border-left: none;
-    right: -1em;
-    left: auto;
-    top: -1px;
-  }
-  .timeline li:nth-of-type(2n+1) {
-    clear: both;
-  }
+/*
+ * This is the most important part of this whole file, if you understand what's happening here
+ * you can really make this in so many different ways.
+ * 
+ * We start by selecting the input inside of the label, with "label input". From there we use the 
+ * ":checked" selector to *only* select the input when it is checked. We then use the immediate sibling 
+ * selector(+) to select the span, and then it's pseudo element :after(What we are using to mark the button)
+ * Because we already styled the :after, all we have to do is set the opacity to 1, making it fade in.
+ */
+label input:checked+span:after {
+  opacity: 1;
 }
