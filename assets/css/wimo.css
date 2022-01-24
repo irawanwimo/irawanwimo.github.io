@@ -52,8 +52,8 @@ body{
 }
 
 .square {
-  width: 22vw;
-  height: 22vw;
+  width: 300px;
+  height: 300px;
   border: 1px solid #303030;
   color: white;
   display: flex;
