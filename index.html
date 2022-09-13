@@ -1,95 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: #2b2b2b !important;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/wimo-box.css">
     <link rel="stylesheet" href="assets/css/wimo.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 
     <script src="assets/js/jquery-3.6.js"></script>
     
     <title>Illunoir</title>
 </head>
+<body class="phone-view">
+    <nav>
+        <a class="nav-item" href="#brides">
+        <i data-feather="heart"></i><span>Brides</span>
+        </a>
+        
+        <a class="nav-item" href="#calendar">
+        <i data-feather="calendar"></i><span>Calendar</span>
+        </a>
+        
+        <a class="nav-item" href="#map">
+        <i data-feather="map"></i><span>Location</span>
+        </a>
+        
+        <a class="nav-item" href="#galleries">
+        <i data-feather="camera"></i><span>Galleries</span>
+        </a>
+    </nav>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 center-vh-flex" style="margin-top: 100px;">
-            <h2 style="color: #e5e5e5;">illunoir</h2>
-        </div>
-        <div class="col-md-12 center-vh-flex" style="padding-top: 100px;">
-            <div class="bg-sq-spinning">
-                <div class="square">
-                    <div class="square">
-                    </div>
+    <div class="container-sm mx-0 mx-sm-0 g-0">
+        <div class="row g-0" id="scroll_detect">
+            <div class="section col-md-12" id="particle-canvas" style="height: 100vh;background: white;">
+                <div class="title_photo">
+                    <h1>Ayu & Irawan</h1>
                 </div>
             </div>
-            
-            <div class="scene">
-                <div class="cube">
-                    <div class="cube__face cube__face--front">front</div>
-                    <div class="cube__face cube__face--back">back</div>
-                    <div class="cube__face cube__face--right">right</div>
-                    <div class="cube__face cube__face--left">left</div>
-                    <div class="cube__face cube__face--top">top</div>
-                    <div class="cube__face cube__face--bottom">bottom</div>
-                </div>
+            <div class="section col-md-12" id="brides" style="height: 100vh;background: white;">
+                <p>Brides</p>
             </div>
-            <a id="testclick">Test</a>
-        </div>
-        <div class="col-md-12 center-vh-flex" style="margin-top: 100px;">
-            <p class="radio-group">
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="front" checked /> 
-                    <span>front</span>
-                </label>
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="right" /> 
-                    <span>right</span>
-                </label>
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="back" /> 
-                    <span>back</span>
-                </label>
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="left" /> 
-                    <span>left</span>
-                </label>
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="top" /> 
-                    <span>top</span>
-                </label>
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="bottom" /> 
-                    <span>bottom</span>
-                </label>
-            </p>
+            <div class="section col-md-12" id="calendar" style="height: 800px;background: white;">
+                <p>Calendar</p>
+            </div>
+            <div class="section col-md-12" id="map" style="height: 800px;background: white;">
+                <p>Location</p>
+            </div>
+            <div class="section col-md-12" id="galleries" style="height: 800px;background: white;">
+                <p>Galleries</p>
+            </div>
         </div>
     </div>
-</div>
 
-  
-
-<script src="assets/js/wimo-box.js"></script>
-<script src="assets/js/wimo.js"></script>
-<script src="assets/js/modal.js"></script>
-<script src="assets/js/bootstrap/bootstrap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script>
-    document.getElementById('testclick').addEventListener('click', function() {
-
-        TweenMax.to('.scene', 1.5, {opacity: 0, ease: Circ.easeOut });
-
-    })
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particle.js"></script>
+    <script>
+        var canvasDiv = document.getElementById('particle-canvas');
+        var options = {
+            particleColor: '#514a92',
+            background: 'assets/image/bg_top.jpg',
+            interactive: true,
+            speed: 'medium',
+            density: 'high'
+        };
+        var particleCanvas = new ParticleNetwork(canvasDiv, options);
+    </script>
 </body>
 </html>
