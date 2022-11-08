@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="assets/css/wimo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Tangerine:wght@700&display=swap" rel="stylesheet">
     
     
     <script src="assets/js/jquery-3.6.js"></script>
@@ -37,17 +41,17 @@
         <i data-feather="heart"></i><span>Brides</span>
         </a>
         
-        <a class="nav-item" href="#calendar">
-        <i data-feather="calendar"></i><span>Date</span>
-        </a>
-        
         <a class="nav-item" href="#map">
-        <i data-feather="map"></i><span>Location</span>
+            <i data-feather="map"></i><span>Location</span>
         </a>
         
-        <a class="nav-item" href="#galleries">
-        <i data-feather="camera"></i><span>Galleries</span>
+        <a class="nav-item" href="#rsvp">
+            <i data-feather="book-open"></i><span>RSVP</span>
         </a>
+        
+        <!-- <a class="nav-item" href="#galleries">
+            <i data-feather="camera"></i><span>Galleries</span>
+        </a> -->
     </nav>
 
     <div class="container-sm mx-0 mx-sm-0 g-0">
@@ -57,29 +61,44 @@
                     <h1>Ayu & Irawan</h1>
                 </div>
             </div> -->
-            <div class="section col-md-12 center-v-h" style="height: 100vh;background: #e7e7e7;">
+            <div class="section col-md-12 center-v-h" style="min-height: 100vh;background-image: url(assets/image/bg_body.png);background-size: cover;">
+            <!-- <div class="section col-md-12 center-v-h" style="min-height: 100vh;background: #1f2029;"> -->
                 <div class="title_photo">
-                    <h1>Ayu & Irawan</h1>
-                </div>
-                <div class="section col-md-12 header_photo">
-                    <img src="assets/image/bg_top.jpg" class="img-fluid" alt="...">
+                    <h1 style="font-size: 70px;">Ayu</h1>
+                    <h1 style="font-size: 70px;">&</h1>
+                    <h1 style="font-size: 70px;">Irawan</h1>
                 </div>
             </div>
-            <div class="section col-md-12" id="brides" style="height: 100vh;background: white;">
-                
-                <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/01.jpg">First Lightbox</a>
+            <div class="section col-md-12" id="brides" style="background: #1f2029;padding-top: 40px;padding-bottom: 40px;">
+                <h1 class="title_header">Us in Picturesque</h1>
+                <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/01.jpg">
+                    <div class="section col-md-12 header_photo" style="margin-top: 30px;">
+                        <img src="assets/image/bg_top.jpg" class="img-fluid img_thumb_lightbox" alt="...">
+                    </div>
+                </a>
                 <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/02.jpg"></a>
-
+                <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/03.jpg"></a>
+                <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/04.jpg"></a>
+                <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/05.jpg"></a>
             </div>
-            <div class="section col-md-12" id="calendar" style="height: 800px;background: white;">
-                <p>Date</p>
+            <div class="section col-md-12" id="map" style="height: 800px;background: #1f2029;padding-top: 40px;padding-bottom: 40px;">
+                <h1 class="title_header">A Place to Witness</h1>
+                <div class="location_text">
+                    <p style="font-weight:600;">Griya CIMB Niaga</p>
+                    <p>Jl. Wahid Hasyim Blok B-IV No.3</p>
+                    <p>Pondok Jaya, Pondok Aren</p>
+                </div>
+                <div class="mapouter"><div class="gmap_canvas"><iframe height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=griya%20cimb%20niaga&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:center;height:500px;width: 80%;margin: 0 auto;margin-top:40px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;}</style></div></div>
             </div>
-            <div class="section col-md-12" id="map" style="height: 800px;background: white;">
-                <p>Location</p>
+            <div class="section col-md-12" id="rsvp" style="height: 100vh;background: #1f2029;">
+                <h1 class="title_header">Tell us if you're coming!</h1>
+                <a target="_blank" href="https://www.eventbrite.com/e/ayuwimo-tickets-464596830627">
+                    RSVP Here
+                </a>
             </div>
-            <div class="section col-md-12" id="galleries" style="height: 800px;background: white;">
+            <!-- <div class="section col-md-12" id="galleries" style="height: 800px;background: #1f2029;">
                 <p>Galleries</p>
-            </div>
+            </div> -->
         </div>
     </div>
 

@@ -23,7 +23,7 @@
   nav{
     display: flex;
     justify-content: space-around;
-    background-color: #514a925c;
+    background-color: #222222;
     padding: 12px;
     position: fixed;
     bottom: 0;
@@ -37,7 +37,7 @@
     text-decoration: none;
     color: white;
     padding: 5px 16px;
-    border-radius: 50px;
+    border-radius: 10px;
   }
 
   .nav-item:hover{
@@ -54,7 +54,7 @@
   .active_link{
     text-decoration: none;
     color: #fff;
-    background-color: #514a92;
+    background-color: #757575;
     transition: .2s;
   }
   
@@ -81,7 +81,7 @@
   .phone-view nav{
     max-width: 876px;
     width: 90%;
-    border-radius: 20px;
+    border-radius: 10px;
     bottom: 20;
   }
 
@@ -97,15 +97,41 @@
     top: 50%; */
     width: 100%;
     text-align: center;
+    font-family: 'Tangerine', cursive;
   }
 
   .title_photo h1{
-    color: #fff;
-    z-index: 1 m !important;
+    color: #d0a85f;
   }
 
   .header_photo{
-    width: 80%;
+    width: 70% !important;
     margin: 0 auto;
     /* margin-top: 30px; */
+  }
+
+  .title_header{
+    text-align: center;
+    color: #d0a85f;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .img_thumb_lightbox{
+    border: solid 2px #d0a85f;
+    border-radius: 15px;
+  }
+
+  .location_text{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px 20px;
+    /* background: #37394b; */
+    border: solid 1px #d0a85f;
+    border-radius: 10px;
+    color: #aaaaaa;
+  }
+
+  .location_text p{
+    /* margin-bottom: 0px !important; */
   }
