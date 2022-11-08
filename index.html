@@ -4,11 +4,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/image/favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/image/favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/image/favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/image/favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/image/favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/image/favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/image/favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/image/favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/image/favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/image/favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/image/favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/image/favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="assets/css/wimo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-
+    
+    
     <script src="assets/js/jquery-3.6.js"></script>
     
     <title>Illunoir</title>
@@ -34,13 +52,24 @@
 
     <div class="container-sm mx-0 mx-sm-0 g-0">
         <div class="row g-0" id="scroll_detect">
-            <div class="section col-md-12" id="particle-canvas" style="height: 100vh;background: white;">
+            <!-- <div class="section col-md-12" id="particle-canvas" style="height: 100vh;background: white;">
                 <div class="title_photo">
                     <h1>Ayu & Irawan</h1>
                 </div>
+            </div> -->
+            <div class="section col-md-12 center-v-h" style="height: 100vh;background: #e7e7e7;">
+                <div class="title_photo">
+                    <h1>Ayu & Irawan</h1>
+                </div>
+                <div class="section col-md-12 header_photo">
+                    <img src="assets/image/bg_top.jpg" class="img-fluid" alt="...">
+                </div>
             </div>
             <div class="section col-md-12" id="brides" style="height: 100vh;background: white;">
-                <p>Brides</p>
+                
+                <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/01.jpg">First Lightbox</a>
+                <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/02.jpg"></a>
+
             </div>
             <div class="section col-md-12" id="calendar" style="height: 800px;background: white;">
                 <p>Date</p>
@@ -56,17 +85,26 @@
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/particle.js"></script>
+    <script src="assets/js/fslightbox.js"></script>
     <script>
-        var canvasDiv = document.getElementById('particle-canvas');
-        var options = {
-            particleColor: '#514a92',
-            background: 'assets/image/bg_top.jpg',
-            interactive: true,
-            speed: 'medium',
-            density: 'high'
-        };
-        var particleCanvas = new ParticleNetwork(canvasDiv, options);
+
+        // var canvasDiv = document.getElementById('particle-canvas');
+        // var options = {
+        //     particleColor: '#514a92',
+        //     background: 'assets/image/bg_top.jpg',
+        //     interactive: true,
+        //     speed: 'medium',
+        //     density: 'high'
+        // };
+        // var particleCanvas = new ParticleNetwork(canvasDiv, options);
+    </script>
+    <script>
+        // fsLightboxInstances["first-lightbox"].props.onOpen = function () {
+        //     console.log("The first lightbox has opened.");
+        // }
+        // fsLightboxInstances["second-lightbox"].props.onOpen = function () {
+        //     console.log("The second lightbox has opened.");
+        // }
     </script>
 </body>
 </html>
