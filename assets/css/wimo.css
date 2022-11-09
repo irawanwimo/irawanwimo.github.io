@@ -23,19 +23,20 @@
   nav{
     display: flex;
     justify-content: space-around;
-    background-color: #222222;
+    background-color: #222222db;
     padding: 12px;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 999;
+    border: solid 1px #d0a85f;
   }
   
   .nav-item{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: #d0a85f;
     padding: 5px 16px;
     border-radius: 10px;
   }
@@ -54,7 +55,7 @@
   .active_link{
     text-decoration: none;
     color: #fff;
-    background-color: #757575;
+    background-color: #d0a85f;
     transition: .2s;
   }
   
