@@ -133,6 +133,15 @@
     color: #aaaaaa;
   }
 
-  .location_text p{
-    /* margin-bottom: 0px !important; */
+  .form-group{
+    margin-bottom: 20px;
+  }
+
+  .form-group > label{
+    margin-bottom: 10px;
+  }
+
+  .form-control{
+    border: 1px solid #d0a85f !important;
+    background-color: #1f2029 !important;
   }
