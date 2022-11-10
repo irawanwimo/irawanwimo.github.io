@@ -106,7 +106,7 @@
   }
 
   .header_photo{
-    width: 70% !important;
+    width: 85% !important;
     margin: 0 auto;
     /* margin-top: 30px; */
   }
@@ -118,7 +118,7 @@
   }
 
   .img_thumb_lightbox{
-    border: solid 2px #d0a85f;
+    /* border: solid 2px #d0a85f; */
     border-radius: 15px;
   }
 
