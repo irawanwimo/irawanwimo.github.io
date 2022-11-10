@@ -23,6 +23,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="assets/css/wimo.css">
+    <link rel="stylesheet" href="assets/css/dust.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
@@ -55,6 +56,20 @@
     </nav>
 
     <div class="container-sm mx-0 mx-sm-0 g-0">
+        <div id="nc-main" class="nc-main bg-cover bg-cc">
+
+            <div class="full-wh">
+            
+                <!-- STAR ANIMATION -->
+                <div class="bg-animation">
+                    <div id='stars'></div>
+                    <div id='stars2'></div>
+                    <!-- <div id='stars3'></div> -->
+                    <div id='stars4'></div>
+                </div><!-- / STAR ANIMATION -->
+
+            </div>
+        </div>
         <div class="row g-0" id="scroll_detect">
             <!-- <div class="section col-md-12" id="particle-canvas" style="height: 100vh;background: white;">
                 <div class="title_photo">
@@ -74,6 +89,7 @@
                 </div>
             </div>
             <div class="section col-md-12" id="brides" style="background: #1f2029;">
+                <div id="particles-js"></div>
                 <img src="assets/image/header.png" class="img-fluid" alt="...">
                 <h1 class="title_header">Us in Picturesque</h1>
                 <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/01.jpg">
@@ -85,60 +101,63 @@
                 <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/03.jpg"></a>
                 <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/04.jpg"></a>
                 <a data-fslightbox="first-lightbox" href="assets/image/img/thumb/05.jpg"></a>
-                <img src="assets/image/footer.png" class="img-fluid" alt="..." style="margin-top: 50px;">
+                <div class="container" style="margin-top: 30px;text-align: center;">
+                    <div class="text"></div>
+                </div>
+                <img src="assets/image/footer.png" class="img-fluid" alt="..." style="margin-top: 25px;">
             </div>
-            <div class="section col-md-12" id="map" style="background: #1f2029;padding-bottom: 40px;">
-                <img src="assets/image/footer_flower.png" class="img-fluid" alt="...">
+            <div class="section col-md-12" id="map" style="background: #1f2029;">
+                <img src="assets/image/header.png" class="img-fluid" alt="...">
                 <h1 class="title_header">A Place to Witness</h1>
                 <div class="location_text">
                     <p style="font-weight:600;">Griya CIMB Niaga</p>
-                    <p>Jl. Wahid Hasyim Blok B-IV No.3</p>
-                    <p>Pondok Jaya, Pondok Aren</p>
+                    <p style="margin-bottom: 3px;">Food Bank, Lt. 1</p>
+                    <p style="margin-bottom: 3px;">Jl. Wahid Hasyim Blok B-IV No.3</p>
+                    <p style="margin-bottom: 3px;">Pondok Jaya, Pondok Aren</p>
                 </div>
                 <div class="mapouter"><div class="gmap_canvas"><iframe height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=griya%20cimb%20niaga&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:center;height:500px;width: 80%;margin: 0 auto;margin-top:40px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;}</style></div></div>
+                <img src="assets/image/footer.png" class="img-fluid" alt="..." style="margin-top: 25px;">
             </div>
-            <div class="section col-md-12" id="rsvp" style="height: 100vh;background: #1f2029;">
+            <div class="section col-md-12" id="rsvp" style="background: #1f2029;">
+                <img src="assets/image/header.png" class="img-fluid" alt="...">
                 <h1 class="title_header">Tell us if you're coming!</h1>
                 <form style="width: 80%;margin: 0 auto;color: white;margin-top: 40px;">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Name:</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Irawan Ayu">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Irawan Ayu" style="color: #fff;">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">How many would come?</label>
-                        <select class="form-control" id="exampleFormControlSelect1" style="color:#787878;">
+                        <select class="form-control" id="exampleFormControlSelect1" style="color:#fff;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Wish Us!</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="color: #fff;"></textarea>
                     </div>
                     <button type="button" class="btn btn-light" style="background-color: #d0a85f;color: white;border: none;padding: 5px 25px;margin-top: 25px;">Submit</button>
                 </form>
+                <img src="assets/image/footer.png" class="img-fluid" alt="..." style="margin-top: 25px;">
             </div>
             <div class="section col-md-12" id="notice" style="background: #1f2029;padding-bottom: 200px;">
+                <img src="assets/image/header.png" class="img-fluid" alt="...">
                 <h1 class="title_header">Do's & Dont's</h1>
                 <h1 class="title_header" style="font-size: 14px;">(Yes we know, it's like a concert)</h1>
 
                 <div style="width: 80%;padding: 30px 20px;border: solid 1px #d0a85f;margin: 0 auto;margin-top: 50px;color: white;border-radius: 10px;">
                     <p style="color:#d0a85f;font-weight: 600;">The Do's:</p>
                     <ul>
-                        <li>Siapkan aplikasi Peduli Lindungi untuk scan barcode ketika masuk</li>
-                        <li>Siapkan aplikasi Peduli Lindungi untuk scan barcode ketika masuk</li>
-                        <li>Siapkan aplikasi Peduli Lindungi untuk scan barcode ketika masuk</li>
-                        <li>Siapkan aplikasi Peduli Lindungi untuk scan barcode ketika masuk</li>
+                        <li>Siapkan aplikasi Peduli Lindungi untuk scan barcode ketika masuk gedung Griya CIMB Niaga</li>
+                        <li>Selalu menerapkan protokol kesehatan 5M</li>
                     </ul>
                 </div>
 
                 <div style="width: 80%;padding: 30px 20px;border: solid 1px #d0a85f;margin: 0 auto;margin-top: 50px;color: white;border-radius: 10px;">
                     <p style="color:#d0a85f;font-weight: 600;">The Dont's:</p>
                     <ul>
-                        <li>Siapkan aplikasi Peduli Lindungi untuk scan barcode ketika masuk</li>
-                        <li>Siapkan aplikasi Peduli Lindungi untuk scan barcode ketika masuk</li>
-                        <li>Siapkan aplikasi Peduli Lindungi untuk scan barcode ketika masuk</li>
-                        <li>Siapkan aplikasi Peduli Lindungi untuk scan barcode ketika masuk</li>
+                        <li>Jangan tinggalkan venue sebelum jam 20.00</li>
                     </ul>
                 </div>
             </div>
@@ -148,6 +167,8 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/fslightbox.js"></script>
+    <script src="assets/js/particlesjs.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     <script>
 
         // var canvasDiv = document.getElementById('particle-canvas');
@@ -161,12 +182,200 @@
         // var particleCanvas = new ParticleNetwork(canvasDiv, options);
     </script>
     <script>
-        // fsLightboxInstances["first-lightbox"].props.onOpen = function () {
-        //     console.log("The first lightbox has opened.");
-        // }
-        // fsLightboxInstances["second-lightbox"].props.onOpen = function () {
-        //     console.log("The second lightbox has opened.");
-        // }
+        // ——————————————————————————————————————————————————
+        // TextScramble
+        // ——————————————————————————————————————————————————
+
+        class TextScramble {
+        constructor(el) {
+            this.el = el;
+            this.chars = "!<>-_\\/[]{}—=+*^?#________";
+            this.update = this.update.bind(this);
+        }
+        setText(newText) {
+            const oldText = this.el.innerText;
+            const length = Math.max(oldText.length, newText.length);
+            const promise = new Promise((resolve) => (this.resolve = resolve));
+            this.queue = [];
+            for (let i = 0; i < length; i++) {
+            const from = oldText[i] || "";
+            const to = newText[i] || "";
+            const start = Math.floor(Math.random() * 40);
+            const end = start + Math.floor(Math.random() * 40);
+            this.queue.push({ from, to, start, end });
+            }
+            cancelAnimationFrame(this.frameRequest);
+            this.frame = 0;
+            this.update();
+            return promise;
+        }
+        update() {
+            let output = "";
+            let complete = 0;
+            for (let i = 0, n = this.queue.length; i < n; i++) {
+            let { from, to, start, end, char } = this.queue[i];
+            if (this.frame >= end) {
+                complete++;
+                output += to;
+            } else if (this.frame >= start) {
+                if (!char || Math.random() < 0.28) {
+                char = this.randomChar();
+                this.queue[i].char = char;
+                }
+                output += `<span class="dud">${char}</span>`;
+            } else {
+                output += from;
+            }
+            }
+            this.el.innerHTML = output;
+            if (complete === this.queue.length) {
+            this.resolve();
+            } else {
+            this.frameRequest = requestAnimationFrame(this.update);
+            this.frame++;
+            }
+        }
+        randomChar() {
+            return this.chars[Math.floor(Math.random() * this.chars.length)];
+        }
+        }
+
+        // ——————————————————————————————————————————————————
+        // Example
+        // ——————————————————————————————————————————————————
+
+        const phrases = [
+        "Ayu Sekarsari",
+        "Irawan Dwihastomo",
+        "click on image",
+        "to see gallery",
+        ];
+
+        const el = document.querySelector(".text");
+        const fx = new TextScramble(el);
+
+        let counter = 0;
+        const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+            setTimeout(next, 1500);
+        });
+        counter = (counter + 1) % phrases.length;
+        };
+
+        next();
+
+    </script>
+    <script>
+        particlesJS("particles-js", {
+        "particles": {
+            "number": {
+            "value": 355,
+            "density": {
+                "enable": true,
+                "value_area": 789.1476416322727
+            }
+            },
+            "color": {
+            "value": "#d0a85f"
+            },
+            "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+            },
+            "opacity": {
+            "value": 0.48927153781200905,
+            "random": false,
+            "anim": {
+                "enable": true,
+                "speed": 0.2,
+                "opacity_min": 0,
+                "sync": false
+            }
+            },
+            "size": {
+            "value": 2,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 2,
+                "size_min": 0,
+                "sync": false
+            }
+            },
+            "line_linked": {
+            "enable": false,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+            },
+            "move": {
+            "enable": true,
+            "speed": 0.4,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "bubble"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+            },
+            "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 83.91608391608392,
+                "size": 1,
+                "duration": 3,
+                "opacity": 1,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+            }
+        },
+        "retina_detect": true
+        });
     </script>
 </body>
 </html>

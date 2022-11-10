@@ -88,9 +88,9 @@
 
   ul#nav{padding:0;}
 
-  canvas{
+  /* canvas{
     background: #000000a8;
-  }
+  } */
 
   .title_photo{
     z-index: 10;
@@ -144,4 +144,27 @@
   .form-control{
     border: 1px solid #d0a85f !important;
     background-color: #1f2029 !important;
+  }
+
+  .text {
+    font-weight: 100;
+    font-size: 21px;
+    color: #d0a85f;
+  }
+  .dud {
+    color: #3c3ca1;
+  }
+  
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
