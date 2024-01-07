@@ -13,11 +13,12 @@
 		<link rel="stylesheet" href="assets/css/wimo.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" integrity="sha512-SagM1PHxt5mWDyWARVY6UOdhM5A8J+R1UqIWcGfiwOd+be7uHQagB+JQOmfVZF8jjJQqbyuWzw/KXfb4yqjBkQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
-		<div class="site-wrap">
+		<div class="site-wrap animsition">
 			<div class="panel-wrap animate--none">
 				<div class="panel" data-x-pos="0"  data-y-pos="0">
 					<span class="panel__nav panel__nav--up js-up">Technology</span>
@@ -51,7 +52,7 @@
 					<span class="panel__nav panel__nav--left-down js-down js-left">Videography</span>
 					<span class="panel__nav panel__nav--down js-down">The Entrance</span>
 					<h1>Technology</h1>
-					<span class="panel__zoom">Website Reimagined</span>
+					<span class="panel__zoom"><a href="technology.html" class="animsition-link">Website Reimagined</a></span>
 				</div>
 				<!-- <div class="panel" data-x-pos="-1"  data-y-pos="1">
 					<span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
@@ -66,12 +67,10 @@
 					<h1>Up Right</h1>
 				</div> -->
 				<div class="panel" data-x-pos="-1"  data-y-pos="0">
-					<span class="panel__nav panel__nav--up js-up">up</span>
-					<span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
-					<span class="panel__nav panel__nav--right js-right">right</span>
-					<span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
-					<span class="panel__nav panel__nav--down js-down">down</span>
-					<h1>Left</h1>
+					<span class="panel__nav panel__nav--right-top js-up js-right">Technology</span>
+					<span class="panel__nav panel__nav--right js-right">Home</span>
+					<span class="panel__nav panel__nav--right-down js-down js-right">Contact</span>
+					<h1>Photography</h1>
 				</div>
 				<!-- <div class="panel" data-x-pos="-1"  data-y-pos="-1">
 					<span class="panel__nav panel__nav--up js-up">up</span>
@@ -86,21 +85,16 @@
 					<h1>Down Right</h1>
 				</div> -->
 				<div class="panel" data-x-pos="1"  data-y-pos="0">
-					<span class="panel__nav panel__nav--up js-up">up</span>
-					<span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
-					<span class="panel__nav panel__nav--left js-left">left</span>
-					<span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
-					<span class="panel__nav panel__nav--down js-down">down</span>
-					<h1>Right</h1>
+					<span class="panel__nav panel__nav--left-top js-up js-left">Technology</span>
+					<span class="panel__nav panel__nav--left js-left">Home</span>
+					<span class="panel__nav panel__nav--left-down js-down js-left">Contact</span>
+					<h1>Videography</h1>
 				</div>
 				<div class="panel" data-x-pos="0"  data-y-pos="-1">
-					<span class="panel__nav panel__nav--up js-up">up</span>
-					<span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
-					<span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
-					<span class="panel__nav panel__nav--left js-left">left</span>
-					<span class="panel__nav panel__nav--right js-right">right</span>
-					<span class="panel__nav panel__nav--down js-down">down</span>
-					<h1>Down</h1>
+					<span class="panel__nav panel__nav--up js-up">Home</span>
+					<span class="panel__nav panel__nav--left-top js-up js-left">Photography</span>
+					<span class="panel__nav panel__nav--right-top js-up js-right">Videography</span>
+					<h1>Contact</h1>
 				</div>
 				<!-- <div class="panel" data-x-pos="0"  data-y-pos="-2">
 					<span class="panel__nav panel__nav--up js-up">up</span>
@@ -118,6 +112,32 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/wimo.js"></script>
-
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" integrity="sha512-pYd2QwnzV9JgtoARJf1Ui1q5+p1WHpeAz/M0sUJNprhDviO4zRo12GLlk4/sKBRUCtMHEmjgqo5zcrn8pkdhmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+			<script>
+				$(document).ready(function() {
+					$(".animsition").animsition({
+						inClass: 'fade-in',
+						outClass: 'fade-out',
+						inDuration: 1500,
+						outDuration: 800,
+						linkElement: '.animsition-link',
+						// e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+						loading: true,
+						loadingParentElement: 'body', //animsition wrapper element
+						loadingClass: 'animsition-loading',
+						loadingInner: '', // e.g '<img src="loading.svg" />'
+						timeout: false,
+						timeoutCountdown: 5000,
+						onLoadEvent: true,
+						browser: [ 'animation-duration', '-webkit-animation-duration'],
+						// "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+						// The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+						overlay : false,
+						overlayClass : 'animsition-overlay-slide',
+						overlayParentElement : 'body',
+						transition: function(url){ window.location.href = url; }
+					});
+				});
+			</script>
 	</body>
 </html>
